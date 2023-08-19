@@ -29,6 +29,12 @@ export default [{
 	},
 },
 {
+	files: ["**/test-runner.js"],
+	rules: {
+		"@typescript-eslint/no-var-requires": "off",
+	},
+},
+{
 	files: ["**/features/**/*.ts"],
 	rules: {
 		"func-names": "off",
