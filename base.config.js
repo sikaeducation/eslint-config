@@ -7,7 +7,7 @@ import configAirbnb from "eslint-config-airbnb";
 export default [{
 	files: ["**/*.{js,jsx,ts,tsx}"],
 	linterOptions: {
-		reportUnusedDisableDirectives: true,
+		reportUnusedDisableDirectives: false,
 	},
 	languageOptions: {
 		globals: {
