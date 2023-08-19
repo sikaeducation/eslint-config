@@ -32,7 +32,7 @@ export default [{
 	},
 	plugins: {
 		"@typescript-eslint": pluginTS,
-		pluginPrettier,
+		prettier: pluginPrettier,
 	},
 	rules: {
 		...pluginTS.configs.recommended.rules,

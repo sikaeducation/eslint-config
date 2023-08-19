@@ -22,7 +22,7 @@ export default [{
 		],
 	},
 	plugins: {
-		pluginJest,
+		jest: pluginJest,
 	},
 },
 {
@@ -47,7 +47,7 @@ export default [{
 		"react/destructuring-assignment": "off",
 	},
 	plugins: {
-		pluginStorybook,
+		storybook: pluginStorybook,
 	},
 },
 ]

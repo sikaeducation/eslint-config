@@ -5,9 +5,9 @@ import pluginJSXA11y from "eslint-plugin-jsx-a11y"
 export default [{
 	files: ["**/*.{tsx,jsx}"],
 	plugins: {
-		pluginReact,
-		pluginReactHooks,
-		pluginJSXA11y,
+		react: pluginReact,
+		"react-hooks": pluginReactHooks,
+		"jsx-a11y": pluginJSXA11y,
 	},
 	rules: {
 		...pluginReact.configs.recommended.rules,
