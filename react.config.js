@@ -3,7 +3,7 @@ import pluginReactHooks from "eslint-plugin-react-hooks"
 import pluginJSXA11y from "eslint-plugin-jsx-a11y"
 
 export default [{
-	files: ["**/*.{tsx,jsx}"],
+	files: ["**/*.{ts,js,tsx,jsx,mjs,cjs}"],
 	plugins: {
 		react: pluginReact,
 		"react-hooks": pluginReactHooks,
@@ -27,6 +27,11 @@ export default [{
 				assert: "htmlFor",
 			},
 		],
+	},
+	settings: {
+		react: {
+			version: "detect",
+		},
 	},
 }, {
 	files: ["**/slices/*.ts"],
