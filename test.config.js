@@ -1,6 +1,7 @@
 import pluginJest from "eslint-plugin-jest"
 import pluginStorybook from "eslint-plugin-storybook"
 import pluginImport from "eslint-plugin-import"
+import * as mdx from "eslint-plugin-mdx"
 
 export default [{
 	files: [
@@ -33,6 +34,18 @@ export default [{
 		"func-names": "off",
 		"@typescript-eslint/ban-ts-comment": "off",
 		"testing-library/prefer-screen-queries": "off",
+	},
+},
+{
+	...mdx.flat,
+	processor: mdx.createRemarkProcessor({
+		lintCodeBlocks: true,
+	})
+},
+{
+	...mdx.flatCodeBlocks,
+	rules: {
+		...mdx.flatCodeBlocks.rules,
 	},
 },
 {
