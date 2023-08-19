@@ -13,17 +13,17 @@
 		"eslint-config-airbnb": "^19.0.4",
 		"eslint-config-prettier": "^9.0.0",
 		"eslint-config-react-app": "^7.0.1",
-		"eslint-import-resolver-typescript": "^2.5.0",
+		"eslint-import-resolver-typescript": "^2.5.0"
+	},
+	"peerDependencies": {
+		"eslint": ">=8.47.0",
 		"eslint-plugin-import": "^2.25.3",
 		"eslint-plugin-jest-dom": "^5.0.2",
 		"eslint-plugin-jsx-a11y": "^6.6.1",
 		"eslint-plugin-prettier": "^5.0.0",
 		"eslint-plugin-react": "^7.28.0",
 		"eslint-plugin-react-hooks": "^4.3.0",
-		"eslint-plugin-storybook": "^0.6.8"
-	},
-	"peerDependencies": {
-		"eslint": ">=8.47.0",
+		"eslint-plugin-storybook": "^0.6.8",
 		"prettier": ">=3.0.2"
 	},
 	"prettier": {
