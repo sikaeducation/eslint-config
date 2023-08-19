@@ -1,6 +1,7 @@
 import globals from "globals"
 import parser from "@typescript-eslint/parser"
 import pluginTS from "@typescript-eslint/eslint-plugin"
+import importPlugin from "eslint-plugin-import"
 import pluginPrettier from "eslint-plugin-prettier"
 import configAirbnb from "eslint-config-airbnb";
 
@@ -31,6 +32,7 @@ export default [{
 		},
 	},
 	plugins: {
+		"import": importPlugin,
 		"@typescript-eslint": pluginTS,
 		prettier: pluginPrettier,
 	},

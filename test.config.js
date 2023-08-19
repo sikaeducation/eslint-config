@@ -1,5 +1,6 @@
 import pluginJest from "eslint-plugin-jest"
 import pluginStorybook from "eslint-plugin-storybook"
+import importPlugin from "eslint-plugin-import"
 
 export default [{
 	files: [
@@ -48,6 +49,7 @@ export default [{
 	},
 	plugins: {
 		storybook: pluginStorybook,
+		"import": importPlugin,
 	},
 },
 ]
