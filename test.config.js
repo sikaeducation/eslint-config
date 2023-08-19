@@ -21,9 +21,9 @@ export default [{
 			},
 		],
 	},
-	plugins: [
+	plugins: {
 		pluginJest,
-	],
+	},
 },
 {
 	files: ["**/features/**/*.ts"],
@@ -36,6 +36,7 @@ export default [{
 {
 	files: ["**/*.stories.*", "**/*.mdx"],
 	rules: {
+		...pluginStorybook.configs.recommended.rules,
 		"import/no-anonymous-default-export": "off",
 		"react/function-component-definition": "off",
 		"react/jsx-props-no-spreading": "off",
@@ -45,10 +46,8 @@ export default [{
 		"react/jsx-filename-extension": "off",
 		"react/destructuring-assignment": "off",
 	},
-	plugins: [
+	plugins: {
 		pluginStorybook,
-	],
+	},
 },
-pluginJestDOM.configs.recommended,
-pluginStorybook.configs.recommended,
 ]

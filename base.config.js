@@ -2,6 +2,7 @@ import globals from "globals"
 import parser from "@typescript-eslint/parser"
 import pluginTS from "@typescript-eslint/eslint-plugin"
 import pluginPrettier from "eslint-plugin-prettier"
+import configAirbnb from "eslint-config-airbnb";
 
 export default [{
 	linterOptions: {
@@ -16,6 +17,11 @@ export default [{
 		},
 		parser: parser,
 		parserOptions: {
+			ecmaFeatures: {
+				modules: true,
+				jsx: true,
+				project: "./tsconfig.json",
+			}
 		},
 	},
 	settings: {
@@ -23,11 +29,13 @@ export default [{
 			typescript: {},
 		},
 	},
-	plugins: [
-		pluginTS,
+	plugins: {
+		"@typescript-eslint": pluginTS,
 		pluginPrettier,
-	],
+	},
 	rules: {
+		...pluginTS.configs.recommended.rules,
+		...configAirbnb.rules,
 		quotes: ["error", "double"],
 		"no-shadow": "off",
 		"no-use-before-define": "off",

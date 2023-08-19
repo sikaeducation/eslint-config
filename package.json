@@ -11,6 +11,8 @@
 	"author": "Kyle Coberly",
 	"license": "MIT",
 	"dependencies": {
+		"@typescript-eslint/eslint-plugin": "^6.4.0",
+		"@typescript-eslint/parser": "^6.4.0",
 		"eslint-config-airbnb": "^19.0.4",
 		"eslint-config-prettier": "^9.0.0",
 		"eslint-config-react-app": "^7.0.1",

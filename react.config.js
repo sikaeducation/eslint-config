@@ -4,12 +4,15 @@ import pluginJSXA11y from "eslint-plugin-jsx-a11y"
 
 export default [{
 	files: ["**/*.{tsx,jsx}"],
-	plugins: [
+	plugins: {
 		pluginReact,
 		pluginReactHooks,
 		pluginJSXA11y,
-	],
+	},
 	rules: {
+		...pluginReact.configs.recommended.rules,
+		...pluginReactHooks.configs.recommended.rules,
+		...pluginJSXA11y.configs.recommended.rules,
 		"react/react-in-jsx-scope": "off",
 		"react/require-default-props": "off",
 		"react/jsx-filename-extension": [
@@ -30,8 +33,4 @@ export default [{
 	rules: {
 		"no-param-reassign": "off",
 	},
-},
-pluginReact.configs.recommended,
-pluginReactHooks.configs.recommended,
-pluginJSXA11y.configs.recommended,
-]
+}]
