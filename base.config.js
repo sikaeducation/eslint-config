@@ -1,6 +1,6 @@
-import globals from "./globals"
-import pluginTS from "@typescript-eslint"
-import pluginJestDOM from "eslint-plugin-jest-dom"
+import globals from "globals"
+import parser from "@typescript-eslint/parser"
+import pluginTS from "@typescript-eslint/eslint-plugin"
 import pluginPrettier from "eslint-plugin-prettier"
 
 export default [{
@@ -25,7 +25,6 @@ export default [{
 	},
 	plugins: [
 		pluginTS,
-		pluginJestDOM,
 		pluginPrettier,
 	],
 	rules: {

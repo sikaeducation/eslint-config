@@ -1,4 +1,4 @@
-import pluginJestDOM from "eslint-plugin-jest-dom"
+import pluginJest from "eslint-plugin-jest"
 import pluginStorybook from "eslint-plugin-storybook"
 
 export default [{
@@ -22,7 +22,7 @@ export default [{
 		],
 	},
 	plugins: [
-		pluginJestDOM,
+		pluginJest,
 	],
 },
 {
