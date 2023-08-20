@@ -44,9 +44,9 @@ export default [{
 },
 {
 	...mdx.flat,
-	// processor: mdx.createRemarkProcessor({
-	// 	lintCodeBlocks: true,
-	// }),
+	processor: mdx.createRemarkProcessor({
+		// lintCodeBlocks: true,
+	}),
 },
 // {
 // 	...mdx.flatCodeBlocks,
