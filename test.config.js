@@ -44,16 +44,16 @@ export default [{
 },
 {
 	...mdx.flat,
-	processor: mdx.createRemarkProcessor({
-		lintCodeBlocks: true,
-	})
+	// processor: mdx.createRemarkProcessor({
+	// 	lintCodeBlocks: true,
+	// }),
 },
-{
-	...mdx.flatCodeBlocks,
-	rules: {
-		...mdx.flatCodeBlocks.rules,
-	},
-},
+// {
+// 	...mdx.flatCodeBlocks,
+// 	rules: {
+// 		...mdx.flatCodeBlocks.rules,
+// 	},
+// },
 {
 	files: ["**/*.stories.*", "**/*.mdx"],
 	rules: {
