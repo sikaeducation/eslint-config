@@ -9,7 +9,7 @@ export default [
 	...reactConfig,
 	...testConfig,
 	{
-		// ...configPrettier,
-		// plugins: { pluginPrettier }
+		...configPrettier,
+		plugins: { pluginPrettier }
 	},
 ]
