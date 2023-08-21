@@ -60,6 +60,7 @@ export default [{
 		...pluginStorybook.configs.recommended.rules,
 		"import/no-anonymous-default-export": "off",
 		"react/function-component-definition": "off",
+		"react-hooks/rules-of-hooks": "off",
 		"react/jsx-props-no-spreading": "off",
 		"import/no-extraneous-dependencies": "off",
 		"@typescript-eslint/no-empty-function": "off",
