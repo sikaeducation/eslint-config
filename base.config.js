@@ -22,13 +22,17 @@ export default [{
 			ecmaFeatures: {
 				modules: true,
 				jsx: true,
-				project: "./tsconfig.json",
 			}
 		},
 	},
 	settings: {
+		"import/parsers": {
+			"@typescript-eslint/parser": [".ts", ".tsx"],
+		},
 		"import/resolver": {
-			typescript: {},
+			typescript: {
+				project: "./tsconfig.json",
+			},
 		},
 	},
 	plugins: {
