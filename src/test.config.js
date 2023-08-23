@@ -59,6 +59,12 @@ export default [
     rules: {
       ...pluginStorybook.configs.recommended.rules,
       "react-hooks/rules-of-hooks": "off",
+      "import/no-extraneous-dependencies": [
+        "error",
+        {
+          devDependencies: ["**/*.stories.*", "**/*.mdx"],
+        },
+      ],
     },
     plugins: {
       storybook: pluginStorybook,

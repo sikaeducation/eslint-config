@@ -8,13 +8,6 @@ export default [
   ...baseConfig,
   ...reactConfig,
   ...testConfig,
-  configPrettier,
-  {
-    plugins: { prettier: pluginPrettier },
-    rules: {
-      ...pluginPrettier.configs.recommended.rules,
-    },
-  },
   {
     rules: {
       quotes: ["error", "double"],
@@ -25,6 +18,13 @@ export default [
       "import/no-named-as-default": "off",
       "import/no-named-as-default-member": "off",
       "no-restricted-exports": "off",
+    },
+  },
+  {
+    plugins: { prettier: pluginPrettier },
+    rules: {
+      ...configPrettier.rules,
+      ...pluginPrettier.configs.recommended.rules,
     },
   },
 ];
