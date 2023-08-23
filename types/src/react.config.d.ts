@@ -2,7 +2,6 @@ declare const _default: ({
     files: string[];
     plugins: {
         "react-hooks": any;
-        "jsx-a11y": any;
     };
     rules: any;
     settings: {
