@@ -15,4 +15,16 @@ export default [
       ...pluginPrettier.configs.recommended.rules,
     },
   },
+  {
+    rules: {
+      quotes: ["error", "double"],
+      "no-shadow": "off",
+      "no-use-before-define": "off",
+      "no-underscore-dangle": "off",
+      "import/extensions": "off",
+      "import/no-named-as-default": "off",
+      "import/no-named-as-default-member": "off",
+      "no-restricted-exports": "off",
+    },
+  },
 ];

@@ -1,11 +1,9 @@
-import globals from "globals"
-import parser from "@typescript-eslint/parser"
-import js from "@eslint/js"
-import pluginPrettier from "eslint-plugin-prettier"
+import pluginPrettier from "eslint-plugin-prettier";
+import parserTS from "@typescript-eslint/parser";
 
-import { FlatCompat } from "@eslint/eslintrc"
-import path from "path"
-import { fileURLToPath } from "url"
+import { FlatCompat } from "@eslint/eslintrc";
+import path from "path";
+import { fileURLToPath } from "url";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -18,8 +16,22 @@ const compat = new FlatCompat({
 export default [
 	{
 		files: ["**/*.{js}"],
-		rules: {
-			...js.configs.recommended.rules,
+		languageOptions: {
+			parserOptions: {
+				ecmaVersion: "latest",
+			},
+		},
+	},
+	{
+		files: ["**/*.{ts,tsx}"],
+		languageOptions: {
+			parserOptions: {
+				ecmaFeatures: {
+					jsx: true,
+				},
+				ecmaVersion: "latest",
+				project: true,
+			},
 		},
 	},
 	...compat.extends("airbnb", "plugin:@typescript-eslint/recommended"),
@@ -29,44 +41,29 @@ export default [
 			reportUnusedDisableDirectives: false,
 		},
 		languageOptions: {
-			globals: {
-				...globals.browser,
-				...globals.node,
-				...globals.es2021,
-				...globals.jest,
-			},
-			parser: parser,
-			parserOptions: {
-				ecmaFeatures: {
-					modules: true,
-					jsx: true,
-				}
-			},
+			parser: parserTS,
 		},
 		settings: {
 			"import/parsers": {
+				espree: [".js", ".cjs", ".mjs", ".jsx"],
 				"@typescript-eslint/parser": [".ts", ".tsx"],
 			},
 			"import/resolver": {
-				typescript: {},
+				typescript: {
+					extensions: [".ts", ".tsx"],
+				},
+				node: {
+					extensions: [".js", ".jsx"],
+				},
 			},
 		},
 		plugins: {
 			prettier: pluginPrettier,
 		},
-		rules: {
-			quotes: ["error", "double"],
-			"no-shadow": "off",
-			"no-use-before-define": "off",
-			"no-underscore-dangle": "off",
-		},
 	},
 	{
 		rules: {
-			"import/extensions": "off",
-			"import/no-named-as-default": "off",
-			"import/no-named-as-default-member": "off",
-			"no-restricted-exports": "off",
-		}
+			"import/*": "off",
+		},
 	},
-]
+];
