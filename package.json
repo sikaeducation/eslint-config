@@ -9,7 +9,6 @@
 		"eslint-config"
 	],
 	"scripts": {
-		"dev": "npm run build-types -- --watch",
 		"build-types": "tsc -p ./tsconfig.json"
 	},
 	"types": "./types/index.d.ts",
