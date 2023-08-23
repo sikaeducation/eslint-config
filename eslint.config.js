@@ -10,6 +10,6 @@ export default [
 	...testConfig,
 	{
 		...configPrettier,
-		plugins: { pluginPrettier }
+		plugins: { prettier: pluginPrettier }
 	},
 ]
