@@ -1,5 +1,6 @@
 import pluginJest from "eslint-plugin-jest"
 import pluginStorybook from "eslint-plugin-storybook"
+import pluginImport from "eslint-plugin-import"
 // import * as mdx from "eslint-plugin-mdx"
 
 export default [{

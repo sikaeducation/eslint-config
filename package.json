@@ -8,6 +8,11 @@
 		"eslint",
 		"eslint-config"
 	],
+	"scripts": {
+		"dev": "npm run build-types -- --watch",
+		"build-types": "tsc -p ./tsconfig.json"
+	},
+	"types": "./types/index.d.ts",
 	"author": "Kyle Coberly",
 	"license": "MIT",
 	"dependencies": {
@@ -33,5 +38,8 @@
 	},
 	"prettier": {
 		"singleQuote": false
+	},
+	"devDependencies": {
+		"typescript": "^5.1.6"
 	}
 }
