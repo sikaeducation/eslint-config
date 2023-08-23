@@ -1,6 +1,7 @@
 import globals from "globals"
 import parser from "@typescript-eslint/parser"
 import pluginTS from "@typescript-eslint/eslint-plugin"
+import js from "@eslint/js"
 import pluginImport from "eslint-plugin-import"
 import pluginPrettier from "eslint-plugin-prettier"
 
@@ -17,8 +18,13 @@ const compat = new FlatCompat({
 });
 
 export default [
-	"eslint:recommended",
-	compat.extends("airbnb", "plugin:@typescript-eslint/recommended"),
+	{
+		files: ["**/*.{js}"],
+		rules: {
+			...js.configs.recommended.rules,
+		},
+	},
+	...compat.extends("airbnb", "plugin:@typescript-eslint/recommended"),
 	{
 		files: ["**/*.{js,jsx,ts,tsx}"],
 		linterOptions: {
@@ -60,4 +66,5 @@ export default [
 			"import/extensions": "off",
 			"no-restricted-exports": "off",
 		},
-	}]
+	},
+]
