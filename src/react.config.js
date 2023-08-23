@@ -3,7 +3,7 @@ import pluginReactHooks from "eslint-plugin-react-hooks"
 import pluginJSXA11y from "eslint-plugin-jsx-a11y"
 
 export default [{
-	files: ["**/*.{ts,js,tsx,jsx,mjs,cjs}"],
+	files: ["**/*.{tsx,jsx}"],
 	plugins: {
 		react: pluginReact,
 		"react-hooks": pluginReactHooks,
