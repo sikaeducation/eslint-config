@@ -1,8 +1,6 @@
 import globals from "globals"
 import parser from "@typescript-eslint/parser"
-import pluginTS from "@typescript-eslint/eslint-plugin"
 import js from "@eslint/js"
-import pluginImport from "eslint-plugin-import"
 import pluginPrettier from "eslint-plugin-prettier"
 
 import { FlatCompat } from "@eslint/eslintrc"
@@ -54,8 +52,6 @@ export default [
 			},
 		},
 		plugins: {
-			"import": pluginImport,
-			"@typescript-eslint": pluginTS,
 			prettier: pluginPrettier,
 		},
 		rules: {
@@ -63,8 +59,14 @@ export default [
 			"no-shadow": "off",
 			"no-use-before-define": "off",
 			"no-underscore-dangle": "off",
-			"import/extensions": "off",
-			"no-restricted-exports": "off",
 		},
+	},
+	{
+		rules: {
+			"import/extensions": "off",
+			"import/no-named-as-default": "off",
+			"import/no-named-as-default-member": "off",
+			"no-restricted-exports": "off",
+		}
 	},
 ]

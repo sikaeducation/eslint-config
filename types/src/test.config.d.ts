@@ -12,7 +12,6 @@ declare const _default: ({
     plugins: {
         jest: any;
         storybook?: undefined;
-        import?: undefined;
     };
 } | {
     files: string[];
@@ -39,7 +38,6 @@ declare const _default: ({
     rules: any;
     plugins: {
         storybook: any;
-        import: any;
         jest?: undefined;
     };
 })[];
