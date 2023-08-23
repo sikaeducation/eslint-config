@@ -4,9 +4,7 @@
 	* Prettier and ESLint are dependencies
 * Add to project config with: `{ extends: ["@sikaeducation/ts-react"] }`
 * Configure overrides:
-	* [[js-overrides.js]]
-	* [[feature-test-overrides.js]]
-	* [[react-overrides.js]]
-	* [[storybook-overrides.js]]
-	* [[test-overrides.js]]
+	* [./src/base.config.js](./src/base.config.js)
+	* [./src/test.config.js](./src/test.config.js)
+	* [./src/react.config.js](./src/react.config.js)
 * Publish updates by incrementing version (eg. `npm version patch`) and pushing
