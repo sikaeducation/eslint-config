@@ -1,6 +1,6 @@
 {
 	"name": "@sikaeducation/eslint-config-ts-react",
-	"version": "0.6.15",
+	"version": "0.6.16",
 	"description": "Linting and formatting for Sika's TS and React projects",
 	"main": "index.js",
 	"type": "module",
