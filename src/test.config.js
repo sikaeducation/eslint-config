@@ -72,7 +72,7 @@ export default [
       "react/jsx-filename-extension": [
         "error",
         {
-          extensions: [".mdx"],
+          extensions: [".mdx", ".jsx", ".tsx"],
         },
       ],
       "import/no-extraneous-dependencies": [
