@@ -70,12 +70,9 @@ export default [
     processor: mdx.createRemarkProcessor({
       lintCodeBlocks: false,
     }),
-    // },
-    // {
-    // 	...mdx.flatCodeBlocks,
-    // 	rules: {
-    // 		...mdx.flatCodeBlocks.rules,
-    // 	},
+  },
+  {
+    ...mdx.flatCodeBlocks,
   },
   {
     files: ["**/*.stories.*", "**/*.mdx"],

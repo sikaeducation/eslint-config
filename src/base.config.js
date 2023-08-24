@@ -61,9 +61,4 @@ export default [
       prettier: pluginPrettier,
     },
   },
-  {
-    rules: {
-      "import/*": "off",
-    },
-  },
 ];
