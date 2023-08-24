@@ -1,6 +1,5 @@
 import pluginJest from "eslint-plugin-jest";
 import pluginStorybook from "eslint-plugin-storybook";
-import * as mdx from "eslint-plugin-mdx";
 import compat from "./compat";
 
 export default [
@@ -61,9 +60,6 @@ export default [
         },
       },
     },
-  },
-  {
-    ...mdx.flatCodeBlocks,
   },
   {
     files: ["**/*.stories.*", "**/*.mdx"],
