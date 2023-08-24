@@ -53,6 +53,20 @@ export default [
     rules: {
       ...mdx.flat.rules,
     },
+    settings: {
+      "import/parsers": {
+        espree: [".js", ".cjs", ".mjs", ".jsx"],
+        "@typescript-eslint/parser": [".ts", ".tsx"],
+      },
+      "import/resolver": {
+        typescript: {
+          extensions: [".ts", ".tsx"],
+        },
+        node: {
+          extensions: [".js", ".jsx"],
+        },
+      },
+    },
     // 	processor: mdx.createRemarkProcessor({
     // 		// lintCodeBlocks: true,
     // 	}),

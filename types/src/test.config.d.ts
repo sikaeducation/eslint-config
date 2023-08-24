@@ -14,6 +14,7 @@ declare const _default: ({
         storybook?: undefined;
     };
     languageOptions?: undefined;
+    settings?: undefined;
 } | {
     files: string[];
     rules: {
@@ -25,6 +26,7 @@ declare const _default: ({
     };
     plugins?: undefined;
     languageOptions?: undefined;
+    settings?: undefined;
 } | {
     files: string[];
     rules: {
@@ -36,11 +38,26 @@ declare const _default: ({
     };
     plugins?: undefined;
     languageOptions?: undefined;
+    settings?: undefined;
 } | {
     files: string[];
     languageOptions: any;
     plugins: any;
     rules: any;
+    settings: {
+        "import/parsers": {
+            espree: string[];
+            "@typescript-eslint/parser": string[];
+        };
+        "import/resolver": {
+            typescript: {
+                extensions: string[];
+            };
+            node: {
+                extensions: string[];
+            };
+        };
+    };
 } | {
     files: string[];
     rules: any;
@@ -49,5 +66,6 @@ declare const _default: ({
         jest?: undefined;
     };
     languageOptions?: undefined;
+    settings?: undefined;
 })[];
 export default _default;
