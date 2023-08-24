@@ -11,8 +11,7 @@ export default [
 				ecmaVersion: "latest",
 			},
 		},
-	},
-	{
+	}, {
 		files: ["**/*.{ts,tsx}"],
 		languageOptions: {
 			parserOptions: {
@@ -23,9 +22,7 @@ export default [
 				project: true,
 			},
 		},
-	},
-	...compat.extends("airbnb", "plugin:@typescript-eslint/recommended"),
-	{
+	}, ...compat.extends("airbnb", "plugin:@typescript-eslint/recommended"), {
 		files: ["**/*.{js,jsx,ts,tsx}"],
 		linterOptions: {
 			reportUnusedDisableDirectives: false,
