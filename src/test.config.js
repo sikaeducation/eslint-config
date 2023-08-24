@@ -1,6 +1,6 @@
 import pluginJest from "eslint-plugin-jest";
 import pluginStorybook from "eslint-plugin-storybook";
-// import * as mdx from "eslint-plugin-mdx"
+import * as mdx from "eslint-plugin-mdx";
 
 export default [
   {
@@ -42,23 +42,33 @@ export default [
       "testing-library/prefer-screen-queries": "off",
     },
   },
-  // {
-  // 	...mdx.flat,
-  // 	processor: mdx.createRemarkProcessor({
-  // 		// lintCodeBlocks: true,
-  // 	}),
-  // },
-  // {
-  // 	...mdx.flatCodeBlocks,
-  // 	rules: {
-  // 		...mdx.flatCodeBlocks.rules,
-  // 	},
-  // },
+  {
+    files: ["**/*.{md,mdx}"],
+    languageOptions: {
+      ...mdx.flat.languageOptions,
+    },
+    plugins: {
+      ...mdx.flat.plugins,
+    },
+    rules: {
+      ...mdx.flat.rules,
+    },
+    // 	processor: mdx.createRemarkProcessor({
+    // 		// lintCodeBlocks: true,
+    // 	}),
+    // },
+    // {
+    // 	...mdx.flatCodeBlocks,
+    // 	rules: {
+    // 		...mdx.flatCodeBlocks.rules,
+    // 	},
+  },
   {
     files: ["**/*.stories.*", "**/*.mdx"],
     rules: {
       ...pluginStorybook.configs.recommended.rules,
       "react-hooks/rules-of-hooks": "off",
+      "react/jsx-props-no-spreading": "off",
       "import/no-extraneous-dependencies": [
         "error",
         {

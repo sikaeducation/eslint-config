@@ -13,6 +13,7 @@ declare const _default: ({
         jest: any;
         storybook?: undefined;
     };
+    languageOptions?: undefined;
 } | {
     files: string[];
     rules: {
@@ -23,6 +24,7 @@ declare const _default: ({
         "testing-library/prefer-screen-queries"?: undefined;
     };
     plugins?: undefined;
+    languageOptions?: undefined;
 } | {
     files: string[];
     rules: {
@@ -33,6 +35,12 @@ declare const _default: ({
         "@typescript-eslint/no-var-requires"?: undefined;
     };
     plugins?: undefined;
+    languageOptions?: undefined;
+} | {
+    files: string[];
+    languageOptions: any;
+    plugins: any;
+    rules: any;
 } | {
     files: string[];
     rules: any;
@@ -40,5 +48,6 @@ declare const _default: ({
         storybook: any;
         jest?: undefined;
     };
+    languageOptions?: undefined;
 })[];
 export default _default;
