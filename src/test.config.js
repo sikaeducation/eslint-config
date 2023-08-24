@@ -42,7 +42,7 @@ export default [
 			"testing-library/prefer-screen-queries": "off",
 		},
 	},
-	...compat.extends("plugin:mdx/recommend"),
+	...compat.extends("plugin:mdx/recommended"),
 	{
 		files: ["**/*.{md,mdx}"],
 		settings: {
