@@ -1,8 +1,6 @@
 # Sika's ESLint Config
 
 * Install with `npm install eslint @sikaeducation/eslint-config-ts-react`
-	* ESLint must be install: `npm i eslint`
-* Add to project config with: `{ extends: ["@sikaeducation/ts-react"] }`
 * Exports
 	* [`javascript`](./lib/javascript.config.js)
 	* [`react`](./lib/react.config.js)
