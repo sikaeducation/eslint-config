@@ -69,6 +69,12 @@ export default [
       ...pluginStorybook.configs.recommended.rules,
       "react-hooks/rules-of-hooks": "off",
       "react/jsx-props-no-spreading": "off",
+      "react/jsx-filename-extension": [
+        "error",
+        {
+          extensions: [".mdx"],
+        },
+      ],
       "import/no-extraneous-dependencies": [
         "error",
         {

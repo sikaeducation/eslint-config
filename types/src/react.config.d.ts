@@ -8,6 +8,18 @@ declare const _default: ({
         react: {
             version: string;
         };
+        "import/resolver": {
+            typescript: {
+                extensions: string[];
+            };
+            node: {
+                extensions: string[];
+            };
+        };
+        "import/parsers": {
+            espree: string[];
+            "@typescript-eslint/parser": string[];
+        };
     };
 } | {
     files: string[];
