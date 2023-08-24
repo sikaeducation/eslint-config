@@ -1,10 +1,25 @@
 # Sika's ESLint Config
 
-* Install with `npm install eslint prettier @sikaeducation/eslint-config-ts-react`
-	* Prettier and ESLint are dependencies
+* Install with `npm install eslint @sikaeducation/eslint-config-ts-react`
+	* ESLint must be install: `npm i eslint`
 * Add to project config with: `{ extends: ["@sikaeducation/ts-react"] }`
-* Configure overrides:
-	* [./src/base.config.js](./src/base.config.js)
-	* [./src/test.config.js](./src/test.config.js)
-	* [./src/react.config.js](./src/react.config.js)
+* Exports
+	* [`javascript`](./lib/javascript.config.js)
+	* [`react`](./lib/react.config.js)
+	* [`jest`](./lib/jest.config.js)
+	* [`featureTests`](./lib/feature-tests.config.js)
+	* [`storybook`](./lib/storybook.config.js)
+	* [`formattng`](./lib/formatting.config.js)
 * Publish updates by incrementing version (eg. `npm version patch`) and pushing
+
+Example usage:
+
+```js
+// eslint.config.js
+import { javascript, formatting } from "@sikaeducation/eslint-config-ts-react";
+
+export default [
+	...javascript,
+	...formatting,
+]
+```
