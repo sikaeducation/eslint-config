@@ -15,6 +15,7 @@ declare const _default: ({
     };
     languageOptions?: undefined;
     settings?: undefined;
+    processor?: undefined;
 } | {
     files: string[];
     rules: {
@@ -27,6 +28,7 @@ declare const _default: ({
     plugins?: undefined;
     languageOptions?: undefined;
     settings?: undefined;
+    processor?: undefined;
 } | {
     files: string[];
     rules: {
@@ -39,6 +41,7 @@ declare const _default: ({
     plugins?: undefined;
     languageOptions?: undefined;
     settings?: undefined;
+    processor?: undefined;
 } | {
     files: string[];
     languageOptions: any;
@@ -58,6 +61,7 @@ declare const _default: ({
             };
         };
     };
+    processor: Linter.Processor;
 } | {
     files: string[];
     rules: any;
@@ -67,5 +71,6 @@ declare const _default: ({
     };
     languageOptions?: undefined;
     settings?: undefined;
+    processor?: undefined;
 })[];
 export default _default;

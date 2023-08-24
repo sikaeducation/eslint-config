@@ -67,9 +67,9 @@ export default [
         },
       },
     },
-    // 	processor: mdx.createRemarkProcessor({
-    // 		// lintCodeBlocks: true,
-    // 	}),
+    processor: mdx.createRemarkProcessor({
+      lintCodeBlocks: false,
+    }),
     // },
     // {
     // 	...mdx.flatCodeBlocks,
