@@ -1,4 +1,4 @@
-import { javascript, formatting } from "./lib/index.js";
+import { javascript, formatting } from "./lib/index.ts";
 
 export default [
 	{

@@ -19,7 +19,30 @@ export default [
 			"function-paren-newline": ["error", { minItems: 3 }],
 			"generator-star-spacing": ["error", { before: true, after: false }],
 			"implicit-arrow-linebreak": ["error", "beside"],
-			indent: ["error", "tab"],
+			indent: ['error', "tab", {
+				SwitchCase: 1,
+				VariableDeclarator: 1,
+				outerIIFEBody: 1,
+				// MemberExpression: null,
+				FunctionDeclaration: {
+					parameters: 1,
+					body: 1
+				},
+				FunctionExpression: {
+					parameters: 1,
+					body: 1
+				},
+				CallExpression: {
+					arguments: 1
+				},
+				ArrayExpression: 1,
+				ObjectExpression: 1,
+				ImportDeclaration: 1,
+				flatTernaryExpressions: false,
+				// list derived from https://github.com/benjamn/ast-types/blob/HEAD/def/jsx.js
+				ignoredNodes: ['JSXElement', 'JSXElement > *', 'JSXAttribute', 'JSXIdentifier', 'JSXNamespacedName', 'JSXMemberExpression', 'JSXSpreadAttribute', 'JSXExpressionContainer', 'JSXOpeningElement', 'JSXClosingElement', 'JSXFragment', 'JSXOpeningFragment', 'JSXClosingFragment', 'JSXText', 'JSXEmptyExpression', 'JSXSpreadChild'],
+				ignoreComments: false
+			}],
 			"jsx-quotes": ["error", "prefer-double"],
 			"key-spacing": "error",
 			"keyword-spacing": ["error", { before: true }],

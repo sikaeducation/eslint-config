@@ -110,6 +110,7 @@ export default [
 		settings: {
 			react: {
 				version: "detect",
+				pragma: "React",
 				linkComponents: ["Hyperlink", { name: "Link", linkAttribute: "to" }],
 			},
 			"import/resolver": {
@@ -117,7 +118,7 @@ export default [
 					extensions: [".ts", ".tsx"],
 				},
 				node: {
-					extensions: [".js", ".jsx"],
+					extensions: [".js", ".jsx", ".json"],
 				},
 			},
 			"import/parsers": {
