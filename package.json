@@ -12,11 +12,11 @@
 		"build-types": "tsc -p ./tsconfig.json",
 		"lint": "eslint --fix"
 	},
-	"types": "./types/index.d.ts",
 	"author": "Kyle Coberly",
 	"license": "MIT",
 	"dependencies": {
 		"@eslint/eslintrc": "^2.1.2",
+		"@types/confusing-browser-globals": "^1.0.0",
 		"@typescript-eslint/eslint-plugin": "^6.4.0",
 		"@typescript-eslint/parser": "^6.4.1",
 		"confusing-browser-globals": "^1.0.11",

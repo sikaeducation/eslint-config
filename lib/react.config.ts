@@ -1,3 +1,4 @@
+// @ts-ignore
 import pluginJSXA11y from "eslint-plugin-jsx-a11y";
 import compat from "./compat.js";
 

@@ -1,3 +1,4 @@
+// @ts-ignore
 import pluginStorybook from "eslint-plugin-storybook";
 import mdx from "eslint-mdx";
 import compat from "./compat.js";
