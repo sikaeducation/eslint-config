@@ -2,29 +2,30 @@
 	"name": "@sikaeducation/eslint-config-ts-react",
 	"version": "0.7.2",
 	"description": "Linting and formatting for Sika's TS and React projects",
-	"main": "index.js",
+	"main": "lib/index.js",
 	"type": "module",
 	"keywords": [
 		"eslint",
 		"eslint-config"
 	],
 	"scripts": {
-		"build-types": "tsc -p ./tsconfig.json"
+		"build-types": "tsc -p ./tsconfig.json",
+		"lint": "eslint --fix"
 	},
 	"types": "./types/index.d.ts",
 	"author": "Kyle Coberly",
 	"license": "MIT",
 	"dependencies": {
 		"@eslint/eslintrc": "^2.1.2",
-		"@eslint/js": "^8.47.0",
 		"@typescript-eslint/eslint-plugin": "^6.4.0",
 		"@typescript-eslint/parser": "^6.4.1",
 		"eslint-config-airbnb": "^19.0.4",
-		"eslint-config-react-app": "^7.0.1",
 		"eslint-import-resolver-typescript": "^3.6.0",
 		"eslint-mdx": "^2.2.0",
 		"eslint-plugin-import": "^2.28.1",
 		"eslint-plugin-jest": "^27.2.3",
+		"eslint-plugin-jest-extended": "^2.0.0",
+		"eslint-plugin-jest-formatting": "^3.1.0",
 		"eslint-plugin-jsx-a11y": "^6.6.1",
 		"eslint-plugin-mdx": "^2.2.0",
 		"eslint-plugin-react": "^7.28.0",
@@ -36,6 +37,7 @@
 		"eslint": "^8.47.0"
 	},
 	"devDependencies": {
+		"eslint": "^8.47.0",
 		"typescript": "^5.1.6"
 	}
 }
