@@ -1,6 +1,7 @@
 import pluginJest from "eslint-plugin-jest";
 import pluginStorybook from "eslint-plugin-storybook";
 import * as mdx from "eslint-plugin-mdx";
+import compat from "./compat";
 
 export default [
   {
@@ -42,18 +43,11 @@ export default [
       "testing-library/prefer-screen-queries": "off",
     },
   },
+  ...compat.extends("plugin:mdx/recommend"),
   {
     files: ["**/*.{md,mdx}"],
-    languageOptions: {
-      ...mdx.flat.languageOptions,
-    },
-    plugins: {
-      ...mdx.flat.plugins,
-    },
-    rules: {
-      ...mdx.flat.rules,
-    },
     settings: {
+      "mdx/code-block": true,
       "import/parsers": {
         espree: [".js", ".cjs", ".mjs", ".jsx"],
         "@typescript-eslint/parser": [".ts", ".tsx"],
@@ -67,9 +61,6 @@ export default [
         },
       },
     },
-    processor: mdx.createRemarkProcessor({
-      lintCodeBlocks: false,
-    }),
   },
   {
     ...mdx.flatCodeBlocks,
