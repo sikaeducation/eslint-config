@@ -1,4 +1,5 @@
-import { javascript, formatting } from "@sikaeducation/eslint-config-ts-react/js";
+import * as config from "@sikaeducation/eslint-config-ts-react/js";
+const { javascript, formatting } = config
 
 export default [
 	{

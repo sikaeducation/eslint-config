@@ -42,7 +42,7 @@
 		"eslint": "^8.47.0"
 	},
 	"devDependencies": {
-		"@sikaeducation/eslint-config-ts-react": "^0.8.2",
+		"@sikaeducation/eslint-config-ts-react": "^0.8.3",
 		"eslint": "^8.47.0",
 		"typescript": "^5.1.6"
 	}
