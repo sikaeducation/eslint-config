@@ -1,9 +1,9 @@
 import parserTS from "@typescript-eslint/parser";
-import compat from "./compat.js";
+// import compat from "./compat.js";
 import confusingBrowserGlobals from "confusing-browser-globals"
 
 export default [
-	...compat.extends("plugin:@typescript-eslint/recommended"),
+	// ...compat.extends("plugin:@typescript-eslint/recommended"),
 	{
 		files: ["**/*.{js,jsx,ts,tsx}"],
 		rules: {

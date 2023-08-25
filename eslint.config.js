@@ -1,9 +1,8 @@
-import { javascript, formatting } from "./lib/index.ts";
+import { javascript, formatting } from "@sikaeducation/eslint-config-ts-react/js";
 
 export default [
 	{
 		files: ["lib/**"],
-		ignores: ["types/**"],
 	},
 	...javascript,
 	...formatting,

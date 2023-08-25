@@ -3,14 +3,18 @@
 	"version": "0.8.2",
 	"description": "Linting and formatting for Sika's TS and React projects",
 	"main": "lib/index.js",
+	"exports": {
+		".": "./lib/index.ts",
+		"./js": "./dist/index.js"
+	},
 	"type": "module",
 	"keywords": [
 		"eslint",
 		"eslint-config"
 	],
 	"scripts": {
-		"build-types": "tsc -p ./tsconfig.json",
-		"lint": "eslint --fix"
+		"dev": "tsc -w",
+		"lint": "eslint --fix ."
 	},
 	"author": "Kyle Coberly",
 	"license": "MIT",
@@ -38,6 +42,7 @@
 		"eslint": "^8.47.0"
 	},
 	"devDependencies": {
+		"@sikaeducation/eslint-config-ts-react": "^0.8.2",
 		"eslint": "^8.47.0",
 		"typescript": "^5.1.6"
 	}
