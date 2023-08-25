@@ -46,3 +46,5 @@ var _jestConfig = _interopRequireDefault(require("./jest.config.js"));
 var _storybookConfig = _interopRequireDefault(require("./storybook.config.js"));
 var _formattingConfig = _interopRequireDefault(require("./formatting.config.js"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+//# sourceMappingURL=index.js.map
