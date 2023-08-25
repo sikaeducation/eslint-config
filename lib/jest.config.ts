@@ -1,4 +1,4 @@
-import compat from "./compat.js";
+import compat from "./compat";
 
 export default [
 	{

@@ -46,14 +46,13 @@
 		"rollup-plugin-ts": "^3.4.4"
 	},
 	"peerDependencies": {
-		"eslint": "^7.17.0"
+		"eslint": "^8.47.0"
 	},
 	"devDependencies": {
 		"@babel/cli": "^7.22.10",
 		"@babel/core": "^7.22.11",
 		"@babel/preset-env": "^7.22.10",
 		"@babel/preset-typescript": "^7.22.11",
-		"@sikaeducation/eslint-config-ts-react": "^0.8.11",
 		"eslint": "^7.17.0",
 		"tsup": "^7.2.0",
 		"typescript": "^5.1.6"
