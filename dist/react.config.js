@@ -1,15 +1,10 @@
-"use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
 // @ts-ignore
-const eslint_plugin_jsx_a11y_1 = __importDefault(require("eslint-plugin-jsx-a11y"));
-const compat_js_1 = __importDefault(require("./compat.js"));
-exports.default = [
+import pluginJSXA11y from "eslint-plugin-jsx-a11y";
+import compat from "./compat.js";
+export default [
     {
         files: ["**/*.{tsx,jsx}"],
-        ...compat_js_1.default.plugins("react", "react-hooks", "jsx-a11y"),
+        ...compat.plugins("react", "react-hooks", "jsx-a11y"),
         rules: {
             "react/button-has-type": "error",
             "react/destructuring-assignment": "error",
@@ -102,7 +97,7 @@ exports.default = [
             "react/void-dom-elements-no-children": "error",
             "react-hooks/rules-of-hooks": "error",
             "react-hooks/exhaustive-deps": "error",
-            ...eslint_plugin_jsx_a11y_1.default.configs.strict.rules,
+            ...pluginJSXA11y.configs.strict.rules,
             "jsx-a11y/label-has-associated-control": [
                 "error",
                 {

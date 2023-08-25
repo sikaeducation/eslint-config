@@ -1,17 +1,12 @@
-"use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
 // @ts-ignore
-const eslint_plugin_storybook_1 = __importDefault(require("eslint-plugin-storybook"));
-const eslint_mdx_1 = __importDefault(require("eslint-mdx"));
-const compat_js_1 = __importDefault(require("./compat.js"));
-exports.default = [
-    ...compat_js_1.default.extends("plugin:mdx/recommended"),
+import pluginStorybook from "eslint-plugin-storybook";
+import mdx from "eslint-mdx";
+import compat from "./compat.js";
+export default [
+    ...compat.extends("plugin:mdx/recommended"),
     {
         files: ["**/*.{md,mdx}"],
-        ...compat_js_1.default.plugins("mdx"),
+        ...compat.plugins("mdx"),
         rules: {
             "mdx/remark": "error",
         },
@@ -38,7 +33,7 @@ exports.default = [
         languageOptions: {
             sourceType: "module",
             ecmaVersion: "latest",
-            parser: eslint_mdx_1.default,
+            parser: mdx,
             globals: {
                 React: false,
             },
@@ -46,9 +41,9 @@ exports.default = [
     },
     {
         files: ["*.stories.@(ts|tsx|js|jsx|mjs|cjs)"],
-        ...compat_js_1.default.plugins("storybook"),
+        ...compat.plugins("storybook"),
         rules: {
-            ...eslint_plugin_storybook_1.default.configs.recommended.rules,
+            ...pluginStorybook.configs.recommended.rules,
             "react/jsx-filename-extension": [
                 "error",
                 {

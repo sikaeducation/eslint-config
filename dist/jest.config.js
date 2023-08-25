@@ -1,13 +1,8 @@
-"use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-const compat_js_1 = __importDefault(require("./compat.js"));
-exports.default = [
+import compat from "./compat.js";
+export default [
     {
         files: ["**/*.{test,spec}.{ts,tsx,js,jsx}"],
-        ...compat_js_1.default.plugins("jest", "jest-formatting", "jest-extended"),
+        ...compat.plugins("jest", "jest-formatting", "jest-extended"),
         rules: {
             "import/no-extraneous-dependencies": [
                 "error",

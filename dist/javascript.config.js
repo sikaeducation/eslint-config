@@ -1,12 +1,7 @@
-"use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-const parser_1 = __importDefault(require("@typescript-eslint/parser"));
+import parserTS from "@typescript-eslint/parser";
 // import compat from "./compat.js";
-const confusing_browser_globals_1 = __importDefault(require("confusing-browser-globals"));
-exports.default = [
+import confusingBrowserGlobals from "confusing-browser-globals";
+export default [
     // ...compat.extends("plugin:@typescript-eslint/recommended"),
     {
         files: ["**/*.{js,jsx,ts,tsx}"],
@@ -477,7 +472,7 @@ exports.default = [
                     name: 'isNaN',
                     message: 'Use Number.isNaN instead https://github.com/airbnb/javascript#standard-library--isnan',
                 },
-            ].concat(confusing_browser_globals_1.default.map((g) => ({
+            ].concat(confusingBrowserGlobals.map((g) => ({
                 name: g,
                 message: `Use window.${g} instead. https://github.com/facebook/create-react-app/blob/HEAD/packages/confusing-browser-globals/README.md`,
             }))),
@@ -508,7 +503,7 @@ exports.default = [
     {
         files: ["**/*.{ts,tsx}"],
         languageOptions: {
-            parser: parser_1.default,
+            parser: parserTS,
             parserOptions: {
                 ecmaFeatures: {
                     jsx: true,

@@ -14,6 +14,7 @@
 	],
 	"scripts": {
 		"dev": "tsc -w",
+		"build": "tsc",
 		"lint": "eslint --fix ."
 	},
 	"author": "Kyle Coberly",
@@ -42,7 +43,7 @@
 		"eslint": "^8.47.0"
 	},
 	"devDependencies": {
-		"@sikaeducation/eslint-config-ts-react": "^0.8.3",
+		"@sikaeducation/eslint-config-ts-react": "^0.8.4",
 		"eslint": "^8.47.0",
 		"typescript": "^5.1.6"
 	}
