@@ -1,14 +1,14 @@
 module.exports = {
-	"presets": [
+	presets: [
 		[
 			"@babel/preset-env",
 			{
-				"targets": {
-					"node": "current"
-				}
-			}
+				targets: {
+					node: "current",
+				},
+			},
 		],
-		"@babel/preset-typescript"
+		"@babel/preset-typescript",
 	],
-	"sourceMaps": "inline",
-}
+	sourceMaps: "inline",
+};
