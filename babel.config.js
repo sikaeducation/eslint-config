@@ -10,5 +10,5 @@ module.exports = {
 		],
 		"@babel/preset-typescript"
 	],
-	"sourceMaps": "inline"
+	"sourceMaps": "inline",
 }
