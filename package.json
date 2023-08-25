@@ -13,7 +13,7 @@
 	"scripts": {
 		"dev": "tsc -w",
 		"build": "rm -rf dist && rollup -c",
-		"lint": "eslint --fix --ext js,ts,tsx,jsx,md,mdx ."
+		"lint": "eslint --fix --ext js,ts,tsx,jsx ."
 	},
 	"author": "Kyle Coberly",
 	"license": "MIT",

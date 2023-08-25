@@ -4,7 +4,6 @@ module.exports = {
 		require("./lib/react.overrides"),
 		require("./lib/jest.overrides"),
 		require("./lib/storybook.overrides"),
-		require("./lib/mdx.overrides"),
 		require("./lib/formatting.overrides"),
 	],
 };
