@@ -2,12 +2,12 @@
 
 * Install with `npm install eslint @sikaeducation/eslint-config-ts-react`
 * Exports
-	* [`javascript`](./lib/javascript.config.js)
-	* [`react`](./lib/react.config.js)
-	* [`jest`](./lib/jest.config.js)
-	* [`featureTests`](./lib/feature-tests.config.js)
-	* [`storybook`](./lib/storybook.config.js)
-	* [`formattng`](./lib/formatting.config.js)
+	* [`javascript`](./lib/javascript.overrides.js)
+	* [`react`](./lib/react.overrides.js)
+	* [`jest`](./lib/jest.overrides.js)
+	* [`featureTests`](./lib/feature-tests.overrides.js)
+	* [`storybook`](./lib/storybook.overrides.js)
+	* [`formattng`](./lib/formatting.overrides.js)
 * Publish updates by incrementing version (eg. `npm version patch`) and pushing
 
 Example usage:
