@@ -1,9 +1,13 @@
-import parserTS from "@typescript-eslint/parser";
-// import compat from "./compat.js";
+import compat from "./compat.js";
 import confusingBrowserGlobals from "confusing-browser-globals"
 
 export default [
-	// ...compat.extends("plugin:@typescript-eslint/recommended"),
+	...compat.extends("plugin:@typescript-eslint/recommended"),
+	...compat.config({
+		extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended'],
+		parser: '@typescript-eslint/parser',
+		plugins: ['@typescript-eslint'],
+	}),
 	{
 		files: ["**/*.{js,jsx,ts,tsx}"],
 		rules: {
@@ -504,18 +508,6 @@ export default [
 			],
 			'import/no-commonjs': 'off',
 			'import/default': 'off',
-		},
-	},
-	{
-		files: ["**/*.{ts,tsx}"],
-		languageOptions: {
-			parser: parserTS,
-			parserOptions: {
-				ecmaFeatures: {
-					jsx: true,
-				},
-				project: true,
-			},
 		},
 	},
 	{
