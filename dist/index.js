@@ -6,44 +6,44 @@ Object.defineProperty(exports, "__esModule", {
 Object.defineProperty(exports, "featureTests", {
   enumerable: true,
   get: function () {
-    return _featureTestsConfig.default;
+    return _featureTests.default;
   }
 });
 Object.defineProperty(exports, "formatting", {
   enumerable: true,
   get: function () {
-    return _formattingConfig.default;
+    return _formatting.default;
   }
 });
 Object.defineProperty(exports, "javascript", {
   enumerable: true,
   get: function () {
-    return _javascriptConfig.default;
+    return _javascript.default;
   }
 });
 Object.defineProperty(exports, "jest", {
   enumerable: true,
   get: function () {
-    return _jestConfig.default;
+    return _jest.default;
   }
 });
 Object.defineProperty(exports, "react", {
   enumerable: true,
   get: function () {
-    return _reactConfig.default;
+    return _react.default;
   }
 });
 Object.defineProperty(exports, "storybook", {
   enumerable: true,
   get: function () {
-    return _storybookConfig.default;
+    return _storybook.default;
   }
 });
-var _javascriptConfig = _interopRequireDefault(require("./javascript.config.js"));
-var _featureTestsConfig = _interopRequireDefault(require("./feature-tests.config.js"));
-var _reactConfig = _interopRequireDefault(require("./react.config.js"));
-var _jestConfig = _interopRequireDefault(require("./jest.config.js"));
-var _storybookConfig = _interopRequireDefault(require("./storybook.config.js"));
-var _formattingConfig = _interopRequireDefault(require("./formatting.config.js"));
+var _javascript = _interopRequireDefault(require("./javascript.config"));
+var _featureTests = _interopRequireDefault(require("./feature-tests.config"));
+var _react = _interopRequireDefault(require("./react.config"));
+var _jest = _interopRequireDefault(require("./jest.config"));
+var _storybook = _interopRequireDefault(require("./storybook.config"));
+var _formatting = _interopRequireDefault(require("./formatting.config"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfamF2YXNjcmlwdENvbmZpZyIsIl9pbnRlcm9wUmVxdWlyZURlZmF1bHQiLCJyZXF1aXJlIiwiX2ZlYXR1cmVUZXN0c0NvbmZpZyIsIl9yZWFjdENvbmZpZyIsIl9qZXN0Q29uZmlnIiwiX3N0b3J5Ym9va0NvbmZpZyIsIl9mb3JtYXR0aW5nQ29uZmlnIiwib2JqIiwiX19lc01vZHVsZSIsImRlZmF1bHQiXSwic291cmNlcyI6WyIuLi9saWIvaW5kZXgudHMiXSwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IHsgZGVmYXVsdCBhcyBqYXZhc2NyaXB0IH0gZnJvbSBcIi4vamF2YXNjcmlwdC5jb25maWcuanNcIjtcbmV4cG9ydCB7IGRlZmF1bHQgYXMgZmVhdHVyZVRlc3RzIH0gZnJvbSBcIi4vZmVhdHVyZS10ZXN0cy5jb25maWcuanNcIjtcbmV4cG9ydCB7IGRlZmF1bHQgYXMgcmVhY3QgfSBmcm9tIFwiLi9yZWFjdC5jb25maWcuanNcIjtcbmV4cG9ydCB7IGRlZmF1bHQgYXMgamVzdCB9IGZyb20gXCIuL2plc3QuY29uZmlnLmpzXCI7XG5leHBvcnQgeyBkZWZhdWx0IGFzIHN0b3J5Ym9vayB9IGZyb20gXCIuL3N0b3J5Ym9vay5jb25maWcuanNcIjtcbmV4cG9ydCB7IGRlZmF1bHQgYXMgZm9ybWF0dGluZyB9IGZyb20gXCIuL2Zvcm1hdHRpbmcuY29uZmlnLmpzXCI7XG4iXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUEsSUFBQUEsaUJBQUEsR0FBQUMsc0JBQUEsQ0FBQUMsT0FBQTtBQUNBLElBQUFDLG1CQUFBLEdBQUFGLHNCQUFBLENBQUFDLE9BQUE7QUFDQSxJQUFBRSxZQUFBLEdBQUFILHNCQUFBLENBQUFDLE9BQUE7QUFDQSxJQUFBRyxXQUFBLEdBQUFKLHNCQUFBLENBQUFDLE9BQUE7QUFDQSxJQUFBSSxnQkFBQSxHQUFBTCxzQkFBQSxDQUFBQyxPQUFBO0FBQ0EsSUFBQUssaUJBQUEsR0FBQU4sc0JBQUEsQ0FBQUMsT0FBQTtBQUErRCxTQUFBRCx1QkFBQU8sR0FBQSxXQUFBQSxHQUFBLElBQUFBLEdBQUEsQ0FBQUMsVUFBQSxHQUFBRCxHQUFBLEtBQUFFLE9BQUEsRUFBQUYsR0FBQSJ9
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfamF2YXNjcmlwdCIsIl9pbnRlcm9wUmVxdWlyZURlZmF1bHQiLCJyZXF1aXJlIiwiX2ZlYXR1cmVUZXN0cyIsIl9yZWFjdCIsIl9qZXN0IiwiX3N0b3J5Ym9vayIsIl9mb3JtYXR0aW5nIiwib2JqIiwiX19lc01vZHVsZSIsImRlZmF1bHQiXSwic291cmNlcyI6WyIuLi9saWIvaW5kZXgudHMiXSwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IHsgZGVmYXVsdCBhcyBqYXZhc2NyaXB0IH0gZnJvbSBcIi4vamF2YXNjcmlwdC5jb25maWdcIjtcbmV4cG9ydCB7IGRlZmF1bHQgYXMgZmVhdHVyZVRlc3RzIH0gZnJvbSBcIi4vZmVhdHVyZS10ZXN0cy5jb25maWdcIjtcbmV4cG9ydCB7IGRlZmF1bHQgYXMgcmVhY3QgfSBmcm9tIFwiLi9yZWFjdC5jb25maWdcIjtcbmV4cG9ydCB7IGRlZmF1bHQgYXMgamVzdCB9IGZyb20gXCIuL2plc3QuY29uZmlnXCI7XG5leHBvcnQgeyBkZWZhdWx0IGFzIHN0b3J5Ym9vayB9IGZyb20gXCIuL3N0b3J5Ym9vay5jb25maWdcIjtcbmV4cG9ydCB7IGRlZmF1bHQgYXMgZm9ybWF0dGluZyB9IGZyb20gXCIuL2Zvcm1hdHRpbmcuY29uZmlnXCI7XG4iXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUEsSUFBQUEsV0FBQSxHQUFBQyxzQkFBQSxDQUFBQyxPQUFBO0FBQ0EsSUFBQUMsYUFBQSxHQUFBRixzQkFBQSxDQUFBQyxPQUFBO0FBQ0EsSUFBQUUsTUFBQSxHQUFBSCxzQkFBQSxDQUFBQyxPQUFBO0FBQ0EsSUFBQUcsS0FBQSxHQUFBSixzQkFBQSxDQUFBQyxPQUFBO0FBQ0EsSUFBQUksVUFBQSxHQUFBTCxzQkFBQSxDQUFBQyxPQUFBO0FBQ0EsSUFBQUssV0FBQSxHQUFBTixzQkFBQSxDQUFBQyxPQUFBO0FBQTRELFNBQUFELHVCQUFBTyxHQUFBLFdBQUFBLEdBQUEsSUFBQUEsR0FBQSxDQUFBQyxVQUFBLEdBQUFELEdBQUEsS0FBQUUsT0FBQSxFQUFBRixHQUFBIn0=

@@ -1,7 +1,7 @@
-import * as config from "@sikaeducation/eslint-config-ts-react/js";
+const config = require("@sikaeducation/eslint-config-ts-react/js");
 const { javascript, formatting } = config
 
-export default [
+module.exports = [
 	{
 		files: ["lib/**"],
 	},
