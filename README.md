@@ -5,7 +5,7 @@
 	* [`javascript`](./lib/javascript.overrides.js)
 	* [`typescript`](./lib/typescript.overrides.js)
 	* [`react`](./lib/react.overrides.js)
-	* [`reactTypescript`](./lib/react.typescript.overrides.js)
+	* [`react-typescript`](./lib/react.typescript.overrides.js)
 	* [`jest`](./lib/jest.overrides.js)
 	* [`storybook`](./lib/storybook.overrides.js)
 	* [`formattng`](./lib/formatting.overrides.js)
@@ -14,11 +14,13 @@
 Example usage:
 
 ```js
-// eslint.config.js
-import { javascript, formatting } from "@sikaeducation/eslint-config-ts-react";
+// .eslintrc
+require("@sikaeducation/eslint-config-ts-react");
 
-export default [
-	...javascript,
-	...formatting,
-]
+module.exports = {
+	overrides: [
+		require("@sikaeducation/eslint-config-ts-react/react-typescript"),
+		require("@sikaeducation/eslint-config-ts-react/formatting"),
+	],
+};
 ```

@@ -4,7 +4,13 @@
 	"description": "Linting and formatting for Sika's TS and React projects",
 	"main": "./lib/index.js",
 	"exports": {
-		".": "./lib/index.js"
+		"./formatting": "./lib/formatting.overrides.js",
+		"./javascript": "./lib/javascript.overrides.js",
+		"./typescript": "./lib/typescript.overrides.js",
+		"./jest": "./lib/jest.overrides.js",
+		"./react": "./lib/react.overrides.js",
+		"./react-typescript": "./lib/react.typescript.overrides.js",
+		"./storybook": "./lib/storybook.overrides.js"
 	},
 	"keywords": [
 		"eslint",
