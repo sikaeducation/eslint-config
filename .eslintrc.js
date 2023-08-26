@@ -1,6 +1,8 @@
 module.exports = {
+	extends: [
+		"plugin:@sikaeducation/js",
+	],
 	overrides: [
-		require("./lib/javascript.overrides"),
-		require("./lib/formatting.overrides"),
+		"plugin:@sikaeducation/formatting",
 	],
 };

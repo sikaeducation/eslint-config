@@ -2,25 +2,27 @@
 
 * Install with `npm install eslint @sikaeducation/eslint-config-ts-react`
 * Exports
-	* [`javascript`](./lib/javascript.overrides.js)
-	* [`typescript`](./lib/typescript.overrides.js)
+	* [`js`](./lib/js.overrides.js)
+	* [`ts`](./lib/ts.overrides.js) (includes `js`)
 	* [`react`](./lib/react.overrides.js)
-	* [`react-typescript`](./lib/react.typescript.overrides.js)
-	* [`jest`](./lib/jest.overrides.js)
+	* [`react-ts`](./lib/react.ts.overrides.js) (includes `ts`)
+	* [`jest`](./lib/jest.overrides.js) (includes `js`)
+	* [`jest-ts`](./lib/jest.ts.overrides.js) (includes `ts`)
 	* [`storybook`](./lib/storybook.overrides.js)
-	* [`formattng`](./lib/formatting.overrides.js)
+	* [`formatting`](./lib/formatting.overrides.js) (this is an override, not a config)
 * Publish updates by incrementing version (eg. `npm version patch`) and pushing
 
 Example usage:
 
 ```js
 // .eslintrc
-require("@sikaeducation/eslint-config-ts-react");
-
 module.exports = {
+	extends: [
+		"plugin:@sikaeducation/react-ts",
+		"plugin:@sikaeducation/jest-ts",
+	],
 	overrides: [
-		require("@sikaeducation/eslint-config-ts-react/react-typescript"),
-		require("@sikaeducation/eslint-config-ts-react/formatting"),
+		"plugin:@sikaeducation/formatting",
 	],
 };
 ```
