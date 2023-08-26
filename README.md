@@ -18,8 +18,8 @@ Example usage:
 // .eslintrc
 module.exports = {
 	extends: [
-		"plugin:@sikaeducation/react-ts",
-		"plugin:@sikaeducation/jest-ts",
+		"plugin:@sikaeducation/ts-react",
+		"plugin:@sikaeducation/ts-jest",
 	],
 	overrides: [
 		require("@sikaeducation/eslint-config-react-ts/formatting"),
