@@ -3,6 +3,6 @@ module.exports = {
 		"plugin:@sikaeducation/js",
 	],
 	overrides: [
-		"plugin:@sikaeducation/formatting",
+		require("@sikaeducation/eslint-config-react-ts/formatting"),
 	],
 };

@@ -22,7 +22,7 @@ module.exports = {
 		"plugin:@sikaeducation/jest-ts",
 	],
 	overrides: [
-		"plugin:@sikaeducation/formatting",
+		require("@sikaeducation/eslint-config-react-ts/formatting"),
 	],
 };
 ```
