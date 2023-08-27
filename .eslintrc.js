@@ -1,6 +1,6 @@
 module.exports = {
 	overrides: [
-		require("@sikaeducation/eslint-config-react-ts/js"),
-		require("@sikaeducation/eslint-config-react-ts/formatting"),
+		require("@sikaeducation/eslint-config-ts-react/js"),
+		require("@sikaeducation/eslint-config-ts-react/formatting"),
 	],
 };
