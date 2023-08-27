@@ -1,8 +1,8 @@
 # Sika's ESLint Config
 
-Install with `npm install -D eslint @sikaeducation/eslint-config-ts-react`, as well as any dependencies for specific exports you need (such as `@typescript-eslint/eslint-plugin`). If you're using TypeScript, make sure to point the parser in your `.eslintrc` file to the `tsconfig.json` file.
+Install with `npm install -D eslint @sikaeducation/eslint-config-ts-react`, as well as any dependencies for specific exports you need (such as `@typescript-eslint/eslint-plugin`).
 
-```
+```js
 module.exports = {
 	parserOptions: {
 		project: "./tsconfig.json",
@@ -23,9 +23,6 @@ npm i -D eslint @sikaeducation/eslint-config-ts-react eslint-plugin-react eslint
 ```js
 // .eslintrc
 module.exports = {
-	parserOptions: {
-		project: "./tsconfig.json",
-	},
 	overrides: [
 		require("@sikaeducation/eslint-config-react-ts/ts-react"),
 		require("@sikaeducation/eslint-config-react-ts/ts-jest"),
