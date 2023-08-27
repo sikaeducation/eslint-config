@@ -1,26 +1,20 @@
 # Sika's ESLint Config
 
-* Install with `npm install eslint @sikaeducation/eslint-config-ts-react`
-* Exports
-	* [`js`](./lib/js.overrides.js)
-	* [`ts`](./lib/ts.overrides.js) (includes `js`)
-	* [`react`](./lib/react.overrides.js)
-	* [`react-ts`](./lib/react.ts.overrides.js) (includes `ts`)
-	* [`jest`](./lib/jest.overrides.js) (includes `js`)
-	* [`jest-ts`](./lib/jest.ts.overrides.js) (includes `ts`)
-	* [`storybook`](./lib/storybook.overrides.js)
-	* [`formatting`](./lib/formatting.overrides.js) (this is an override, not a config)
-* Publish updates by incrementing version (eg. `npm version patch`) and pushing
+Install with `npm install -D eslint @sikaeducation/eslint-config-ts-react`, as well as any dependencies for specific exports you need (such as `@typescript-eslint/eslint-plugin`).
+
+## Usage
 
 Example usage:
+
+```bash
+# Install dependencies
+npm install -D eslint @sikaeducation/eslint-config-ts-react @typescript-eslint/eslint-plugin
+npm i -D eslint @sikaeducation/eslint-config-ts-react eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y @typescript-eslint/eslint-plugin eslint-plugin-import 
+```
 
 ```js
 // .eslintrc
 module.exports = {
-	extends: [
-		"plugin:@sikaeducation/ts-react",
-		"plugin:@sikaeducation/ts-jest",
-	],
 	overrides: [
 		require("@sikaeducation/eslint-config-react-ts/ts-react"),
 		require("@sikaeducation/eslint-config-react-ts/ts-jest"),
@@ -28,3 +22,21 @@ module.exports = {
 	],
 };
 ```
+
+## Exports
+
+| Export | Dependencies to install |
+| --- | --- |
+| [`js`](./lib/js.overrides.js) | `npm i -D eslint @sikaeducation/eslint-config-ts-react eslint-plugin-import` |
+| [`ts`](./lib/ts.overrides.js) | `npm i -D eslint @sikaeducation/eslint-config-ts-react @typescript-eslint/eslint-plugin eslint-plugin-import` |
+| [`react`](./lib/react.overrides.js) | `npm i -D eslint @sikaeducation/eslint-config-ts-react eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y` |
+| [`react-ts`](./lib/react.ts.overrides.js) | `npm i -D eslint @sikaeducation/eslint-config-ts-react eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y` |
+| [`jest`](./lib/jest.overrides.js) | `npm i -D eslint @sikaeducation/eslint-config-ts-react eslint-plugin-jest eslint-plugin-jest-formatting eslint-plugin-jest-extended` |
+| [`jest-ts`](./lib/jest.ts.overrides.js) | `npm i -D eslint @sikaeducation/eslint-config-ts-react eslint-plugin-jest eslint-plugin-jest-formatting eslint-plugin-jest-extended` |
+| [`storybook`](./lib/storybook.overrides.js) | `npm i -D eslint @sikaeducation/eslint-config-ts-react eslint-plugin-storybook` |
+| [`formatting`](./lib/formatting.overrides.js) (This is an override, not a config) | `npm i -D eslint @sikaeducation/eslint-config-ts-react` |
+
+
+## Development
+
+Publish updates by incrementing version (eg. `npm version patch`) and pushing
