@@ -22,6 +22,8 @@ module.exports = {
 		"plugin:@sikaeducation/ts-jest",
 	],
 	overrides: [
+		require("@sikaeducation/eslint-config-react-ts/ts-react"),
+		require("@sikaeducation/eslint-config-react-ts/ts-jest"),
 		require("@sikaeducation/eslint-config-react-ts/formatting"),
 	],
 };

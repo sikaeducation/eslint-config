@@ -5,13 +5,13 @@
 	"main": "./lib/index.js",
 	"exports": {
 		"./formatting": "./lib/formatting.overrides.js",
-		"./js": "./lib/js.config.js",
-		"./ts": "./lib/ts.config.js",
-		"./jest": "./lib/jest.config.js",
-		"./jest-ts": "./lib/jest.ts.config.js",
-		"./react": "./lib/react.config.js",
-		"./react-ts": "./lib/react.ts.config.js",
-		"./storybook": "./lib/storybook.config.js"
+		"./js": "./lib/js.overrides.js",
+		"./ts": "./lib/ts.overrides.js",
+		"./jest": "./lib/jest.overrides.js",
+		"./jest-ts": "./lib/jest.ts.overrides.js",
+		"./react": "./lib/react.overrides.js",
+		"./react-ts": "./lib/react.ts.overrides.js",
+		"./storybook": "./lib/storybook.overrides.js"
 	},
 	"keywords": [
 		"eslint",
@@ -43,6 +43,6 @@
 		"eslint-plugin-storybook": "^0.6.8"
 	},
 	"devDependencies": {
-		"@sikaeducation/eslint-config-ts-react": "^0.10.5"
+		"@sikaeducation/eslint-config-ts-react": "^0.10.6"
 	}
 }
