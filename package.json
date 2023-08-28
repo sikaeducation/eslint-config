@@ -2,18 +2,18 @@
 	"name": "@sikaeducation/eslint-config-ts-react",
 	"version": "0.11.1",
 	"description": "Linting and formatting for Sika's TS and React projects",
-	"main": "./lib/index.js",
+	"main": "./src/index.js",
 	"exports": {
-		"./formatting": "./lib/formatting.overrides.js",
-		"./js": "./lib/js.overrides.js",
-		"./ts": "./lib/ts.overrides.js",
-		"./jest": "./lib/jest.overrides.js",
-		"./jest-ts": "./lib/jest.ts.overrides.js",
-		"./playwright-jest": "./lib/playwright.jest.overrides.js",
-		"./playwright-test": "./lib/playwright.test.overrides.js",
-		"./react": "./lib/react.overrides.js",
-		"./react-ts": "./lib/react.ts.overrides.js",
-		"./storybook": "./lib/storybook.overrides.js"
+		"./formatting": "./overrides/formatting.js",
+		"./js": "./overrides/js.js",
+		"./ts": "./overrides/ts.js",
+		"./jest": "./overrides/jest.js",
+		"./jest-ts": "./overrides/jest-ts.js",
+		"./playwright-jest": "./overrides/playwright-jest.js",
+		"./playwright-test": "./overrides/playwright-test.js",
+		"./react": "./overrides/react.js",
+		"./react-ts": "./overrides/react-ts.js",
+		"./storybook": "./overrides/storybook.js"
 	},
 	"keywords": [
 		"eslint",
@@ -29,6 +29,7 @@
 		"confusing-browser-globals": "^1.0.11"
 	},
 	"peerDependencies": {
+		"@sikaeducation/eslint-config-ts-react": "^0.10.8",
 		"@typescript-eslint/eslint-plugin": "^6.2.0",
 		"@typescript-eslint/parser": "^6.2.0",
 		"eslint": "^8.47.0",
@@ -41,9 +42,5 @@
 		"eslint-plugin-react": "^7.28.0",
 		"eslint-plugin-react-hooks": "^4.3.0",
 		"eslint-plugin-storybook": "^0.6.8"
-	},
-	"devDependencies": {
-		"@sikaeducation/eslint-config-ts-react": "^0.10.8",
-		"eslint-import-resolver-typescript": "^3.6.0"
 	}
 }
