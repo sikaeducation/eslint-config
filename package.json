@@ -9,6 +9,8 @@
 		"./ts": "./lib/ts.overrides.js",
 		"./jest": "./lib/jest.overrides.js",
 		"./jest-ts": "./lib/jest.ts.overrides.js",
+		"./playwright-jest": "./lib/playwright.jest.overrides.js",
+		"./playwright-test": "./lib/playwright.test.overrides.js",
 		"./react": "./lib/react.overrides.js",
 		"./react-ts": "./lib/react.ts.overrides.js",
 		"./storybook": "./lib/storybook.overrides.js"

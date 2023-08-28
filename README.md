@@ -42,6 +42,8 @@ module.exports = {
 | [`jest`](./lib/jest.overrides.js) | `npm i -D eslint @sikaeducation/eslint-config-ts-react eslint-plugin-jest eslint-plugin-jest-formatting eslint-plugin-jest-extended` |
 | [`jest-ts`](./lib/jest.ts.overrides.js) | `npm i -D eslint @sikaeducation/eslint-config-ts-react eslint-plugin-jest eslint-plugin-jest-formatting eslint-plugin-jest-extended` |
 | [`storybook`](./lib/storybook.overrides.js) | `npm i -D eslint @sikaeducation/eslint-config-ts-react eslint-plugin-storybook` |
+| [`playwright-test`](./lib/playwright.test.overrides.js) | `npm i -D eslint @sikaeducation/eslint-config-ts-react eslint-plugin-playwright` |
+| [`playwright-jest`](./lib/playwright.test.overrides.js) | `npm i -D eslint @sikaeducation/eslint-config-ts-react eslint-plugin-playwright` |
 | [`formatting`](./lib/formatting.overrides.js) (This is an override, not a config) | `npm i -D eslint @sikaeducation/eslint-config-ts-react` |
 
 
