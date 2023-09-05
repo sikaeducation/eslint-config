@@ -133,7 +133,7 @@ module.exports = {
 			"error",
 			{
 				code: 80,
-				ignoreTrailingComments: true,
+				ignoreComments: true,
 				ignoreUrls: true,
 				ignoreStrings: true,
 				ignoreTemplateLiterals: false,
