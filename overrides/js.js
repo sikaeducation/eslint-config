@@ -64,10 +64,6 @@ module.exports = {
 					"error",
 					{ allowKeywords: true },
 				],
-				"dot-location": [
-					"error",
-					"property",
-				],
 				"eqeqeq": [
 					"error",
 					"always",
@@ -130,12 +126,6 @@ module.exports = {
 						ignoreArrayIndexes: true,
 						enforceConst: true,
 						detectObjects: false,
-					},
-				],
-				"no-multi-spaces": [
-					"error",
-					{
-						ignoreEOLComments: false,
 					},
 				],
 				"no-multi-str": "error",
@@ -261,11 +251,6 @@ module.exports = {
 						disallowRedundantWrapping: true,
 					},
 				],
-				"wrap-iife": [
-					"error",
-					"outside",
-					{ functionPrototypeMethods: false },
-				],
 				"yoda": "error",
 				"for-direction": "error",
 				"getter-return": [
@@ -290,17 +275,6 @@ module.exports = {
 				"no-empty": "error",
 				"no-ex-assign": "error",
 				"no-extra-boolean-cast": "error",
-				"no-extra-parens": [
-					"off",
-					"all",
-					{
-						conditionalAssign: true,
-						nestedBinaryExpressions: false,
-						returnAssign: false,
-						ignoreJSX: "all", // delegate to eslint-plugin-react
-						enforceForArrowConditionals: false,
-					},
-				],
 				"no-extra-semi": "error",
 				"no-func-assign": "error",
 				"no-import-assign": "error",
@@ -345,19 +319,7 @@ module.exports = {
 						requireReturnForObjectLiteral: false,
 					},
 				],
-				"arrow-parens": [
-					"error",
-					"always",
-				],
-				"arrow-spacing": [
-					"error",
-					{ before: true, after: true },
-				],
 				"constructor-super": "error",
-				"generator-star-spacing": [
-					"error",
-					{ before: false, after: true },
-				],
 				"no-class-assign": "error",
 				"no-confusing-arrow": [
 					"error",
@@ -449,11 +411,6 @@ module.exports = {
 					},
 				],
 				"symbol-description": "error",
-				"template-curly-spacing": "error",
-				"yield-star-spacing": [
-					"error",
-					"after",
-				],
 				//
 				"import/no-unresolved": [
 					"error",
@@ -550,52 +507,11 @@ module.exports = {
 					"error",
 					{ properties: "never", ignoreDestructuring: false },
 				],
-				"comma-dangle": [
-					"error",
-					{
-						arrays: "always-multiline",
-						objects: "always-multiline",
-						imports: "always-multiline",
-						exports: "always-multiline",
-						functions: "always-multiline",
-					},
-				],
 				"comma-spacing": [
 					"error",
 					{ before: false, after: true },
 				],
-				"comma-style": [
-					"error",
-					"last",
-					{
-						exceptions: {
-							ArrayExpression: false,
-							ArrayPattern: false,
-							ArrowFunctionExpression: false,
-							CallExpression: false,
-							FunctionDeclaration: false,
-							FunctionExpression: false,
-							ImportDeclaration: false,
-							ObjectExpression: false,
-							ObjectPattern: false,
-							VariableDeclaration: false,
-							NewExpression: false,
-						},
-					},
-				],
-				"computed-property-spacing": [
-					"error",
-					"never",
-				],
 				"consistent-this": "off",
-				"function-call-argument-newline": [
-					"error",
-					"consistent",
-				],
-				"func-call-spacing": [
-					"error",
-					"never",
-				],
 				"func-name-matching": [
 					"off",
 					"always",
@@ -605,14 +521,6 @@ module.exports = {
 					},
 				],
 				"func-names": "warn",
-				"function-paren-newline": [
-					"error",
-					"multiline-arguments",
-				],
-				"implicit-arrow-linebreak": [
-					"error",
-					"beside",
-				],
 				"max-lines": [
 					"warn",
 					{
@@ -633,14 +541,6 @@ module.exports = {
 				"max-params": [
 					"warn",
 					3,
-				],
-				"max-statements": [
-					"warn",
-					10,
-				],
-				"max-statements-per-line": [
-					"warn",
-					{ max: 1 },
 				],
 				"new-cap": [
 					"error",
@@ -707,10 +607,6 @@ module.exports = {
 					},
 				],
 				"no-multi-assign": ["error"],
-				"no-multiple-empty-lines": [
-					"error",
-					{ max: 1, maxBOF: 0, maxEOF: 0 },
-				],
 				"no-new-object": "error",
 				"no-restricted-syntax": [
 					"error",
@@ -744,7 +640,6 @@ module.exports = {
 					"error",
 					{ defaultAssignment: false },
 				],
-				"no-whitespace-before-property": "error",
 				"operator-assignment": [
 					"error",
 					"always",
@@ -755,16 +650,6 @@ module.exports = {
 					"error",
 					"consistent-as-needed",
 					{ keywords: false, unnecessary: false, numbers: false },
-				],
-				"space-infix-ops": "error",
-				"space-unary-ops": [
-					"error",
-					{
-						words: true,
-						nonwords: false,
-						overrides: {
-						},
-					},
 				],
 				"spaced-comment": [
 					"error",
@@ -795,10 +680,6 @@ module.exports = {
 							balanced: true,
 						},
 					},
-				],
-				"switch-colon-spacing": [
-					"error",
-					{ after: true, before: false },
 				],
 				"unicode-bom": [
 					"error",
