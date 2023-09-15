@@ -6,8 +6,6 @@ Note that the modular exports from this package are eslintrc overrides, not conf
 
 ## Usage
 
-Example usage:
-
 ```bash
 # Install dependencies for TS and React
 npm i -D eslint @sikaeducation/eslint-config eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y @typescript-eslint/eslint-plugin eslint-plugin-import
@@ -23,6 +21,9 @@ module.exports = {
 	],
 };
 ```
+
+* If you use the formatting overrides, they should always be last.
+* Integrate this with your editor's ESLint plugin for fix-on-save. Neovim's is part of `nvim-lsp-config`.
 
 ## Available Overrides
 
