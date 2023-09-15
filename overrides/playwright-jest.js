@@ -4,7 +4,7 @@ module.exports = {
 	overrides: [
 		{
 			files: ["**/features/**/*.{js,jsx,ts,tsx}"],
-			extends: ["playwright/jest-playwright"],
+			extends: ["plugin:playwright/jest-playwright"],
 		},
 		{
 			files: ["**/features/**/*.{js,jsx,ts,tsx}"],
