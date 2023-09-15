@@ -230,10 +230,6 @@ module.exports = {
 		],
 		"semi": "error",
 		"semi-spacing": "error",
-		"space-before-blocks": [
-			"error",
-			"never",
-		],
 		"space-before-function-paren": [
 			"error",
 			"never",
