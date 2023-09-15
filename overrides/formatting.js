@@ -150,7 +150,7 @@ module.exports = {
 			"always",
 		],
 		"max-len": [
-			"error",
+			"warn",
 			{
 				code: 100,
 				ignoreComments: true,
