@@ -1,6 +1,8 @@
 # Sika's ESLint Config
 
-Install with `npm install -D eslint @sikaeducation/eslint-config`, as well as any dependencies for specific exports you need (such as `@typescript-eslint/eslint-plugin`). See [[Available Overrides]] for examples.
+[![CI](https://github.com/sikaeducation/eslint-config/actions/workflows/main.yml/badge.svg)](https://github.com/sikaeducation/eslint-config/actions/workflows/main.yml)
+
+Install with `npm install -D eslint @sikaeducation/eslint-config`, as well as any dependencies for specific exports you need (such as `@typescript-eslint/eslint-plugin`). See [Available Overrides](#available-overrides) for examples.
 
 Note that the modular exports from this package are eslintrc overrides, not configs.
 
