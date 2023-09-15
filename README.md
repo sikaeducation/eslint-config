@@ -32,7 +32,7 @@ module.exports = {
 | Export | Install Command |
 | --- | --- |
 | [`js`](./lib/js.overrides.js) | `npm i -D eslint @sikaeducation/eslint-config eslint-plugin-import` |
-| [`ts`](./lib/ts.overrides.js) | `npm i -D eslint @sikaeducation/eslint-config eslint-import-resolver-typescript @typescript-eslint/eslint-plugin eslint-plugin-import` |
+| [`ts`](./lib/ts.overrides.js) | `npm i -D eslint @sikaeducation/eslint-config eslint-import-resolver-typescript @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-plugin-import` |
 | [`react`](./lib/react.overrides.js) | `npm i -D eslint @sikaeducation/eslint-config eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y` |
 | [`react-ts`](./lib/react.ts.overrides.js) | `npm i -D eslint @sikaeducation/eslint-config eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y` |
 | [`jest`](./lib/jest.overrides.js) | `npm i -D eslint @sikaeducation/eslint-config eslint-plugin-jest eslint-plugin-jest-formatting eslint-plugin-jest-extended` |
