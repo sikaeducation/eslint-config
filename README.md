@@ -1,50 +1,43 @@
 # Sika's ESLint Config
 
-Install with `npm install -D eslint @sikaeducation/eslint-config-ts-react`, as well as any dependencies for specific exports you need (such as `@typescript-eslint/eslint-plugin`).
+Install with `npm install -D eslint @sikaeducation/eslint-config`, as well as any dependencies for specific exports you need (such as `@typescript-eslint/eslint-plugin`). See [[Available Overrides]] for examples.
 
-```js
-module.exports = {
-	parserOptions: {
-		project: "./tsconfig.json",
-	},
-}
-```
+Note that the modular exports from this package are eslintrc overrides, not configs.
 
 ## Usage
 
 Example usage:
 
 ```bash
-# Install dependencies
-npm install -D eslint @sikaeducation/eslint-config-ts-react @typescript-eslint/eslint-plugin
-npm i -D eslint @sikaeducation/eslint-config-ts-react eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y @typescript-eslint/eslint-plugin eslint-plugin-import 
+# Install dependencies for TS and React
+npm i -D eslint @sikaeducation/eslint-config eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y @typescript-eslint/eslint-plugin eslint-plugin-import
 ```
 
 ```js
-// .eslintrc
+// .eslintrc.js
 module.exports = {
 	overrides: [
-		require("@sikaeducation/eslint-config-react-ts/ts-react"),
-		require("@sikaeducation/eslint-config-react-ts/ts-jest"),
-		require("@sikaeducation/eslint-config-react-ts/formatting"),
+		require("@sikaeducation/eslint-config/ts"),
+		require("@sikaeducation/eslint-config/react-ts"),
+		require("@sikaeducation/eslint-config/formatting"),
 	],
 };
 ```
 
-## Exports
+## Available Overrides
 
-| Export | Dependencies to install |
+| Export | Install Command |
 | --- | --- |
-| [`js`](./lib/js.overrides.js) | `npm i -D eslint @sikaeducation/eslint-config-ts-react eslint-plugin-import` |
-| [`ts`](./lib/ts.overrides.js) | `npm i -D eslint @sikaeducation/eslint-config-ts-react eslint-import-resolver-typescript @typescript-eslint/eslint-plugin eslint-plugin-import` |
-| [`react`](./lib/react.overrides.js) | `npm i -D eslint @sikaeducation/eslint-config-ts-react eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y` |
-| [`react-ts`](./lib/react.ts.overrides.js) | `npm i -D eslint @sikaeducation/eslint-config-ts-react eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y` |
-| [`jest`](./lib/jest.overrides.js) | `npm i -D eslint @sikaeducation/eslint-config-ts-react eslint-plugin-jest eslint-plugin-jest-formatting eslint-plugin-jest-extended` |
-| [`jest-ts`](./lib/jest.ts.overrides.js) | `npm i -D eslint @sikaeducation/eslint-config-ts-react eslint-plugin-jest eslint-plugin-jest-formatting eslint-plugin-jest-extended` |
-| [`storybook`](./lib/storybook.overrides.js) | `npm i -D eslint @sikaeducation/eslint-config-ts-react eslint-plugin-storybook` |
-| [`playwright-test`](./lib/playwright.test.overrides.js) | `npm i -D eslint @sikaeducation/eslint-config-ts-react eslint-plugin-playwright` |
-| [`playwright-jest`](./lib/playwright.test.overrides.js) | `npm i -D eslint @sikaeducation/eslint-config-ts-react eslint-plugin-playwright` |
-| [`formatting`](./lib/formatting.overrides.js) (This is an override, not a config) | `npm i -D eslint @sikaeducation/eslint-config-ts-react` |
+| [`js`](./lib/js.overrides.js) | `npm i -D eslint @sikaeducation/eslint-config eslint-plugin-import` |
+| [`ts`](./lib/ts.overrides.js) | `npm i -D eslint @sikaeducation/eslint-config eslint-import-resolver-typescript @typescript-eslint/eslint-plugin eslint-plugin-import` |
+| [`react`](./lib/react.overrides.js) | `npm i -D eslint @sikaeducation/eslint-config eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y` |
+| [`react-ts`](./lib/react.ts.overrides.js) | `npm i -D eslint @sikaeducation/eslint-config eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y` |
+| [`jest`](./lib/jest.overrides.js) | `npm i -D eslint @sikaeducation/eslint-config eslint-plugin-jest eslint-plugin-jest-formatting eslint-plugin-jest-extended` |
+| [`jest-ts`](./lib/jest.ts.overrides.js) | `npm i -D eslint @sikaeducation/eslint-config eslint-plugin-jest eslint-plugin-jest-formatting eslint-plugin-jest-extended` |
+| [`storybook`](./lib/storybook.overrides.js) | `npm i -D eslint @sikaeducation/eslint-config eslint-plugin-storybook` |
+| [`playwright-test`](./lib/playwright.test.overrides.js) | `npm i -D eslint @sikaeducation/eslint-config eslint-plugin-playwright` |
+| [`playwright-jest`](./lib/playwright.test.overrides.js) | `npm i -D eslint @sikaeducation/eslint-config eslint-plugin-playwright` |
+| [`formatting`](./lib/formatting.overrides.js) | `npm i -D eslint @sikaeducation/eslint-config` |
 
 
 ## Development
