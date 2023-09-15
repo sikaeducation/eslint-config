@@ -4,7 +4,7 @@ module.exports = {
 	overrides: [
 		{
 			files: ["**/*.{test,spec,stories}.{js,jsx,ts,tsx}"],
-			extends: ["playwright/recommended"],
+			extends: ["plugin:playwright/recommended"],
 		},
 		{
 			files: ["**/*.{test,spec,stories}.{js,jsx,ts,tsx}"],
