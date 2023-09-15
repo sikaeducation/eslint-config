@@ -24,7 +24,7 @@ module.exports = {
 		},
 	},
 	overrides: [
-		require("@sikaeducation/eslint-config-ts-react/react"),
+		require("@sikaeducation/eslint-config/react"),
 		{
 			files: ["**/slices/*.{ts,tsx}"],
 			rules: {

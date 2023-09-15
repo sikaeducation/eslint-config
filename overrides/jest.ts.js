@@ -9,7 +9,7 @@ module.exports = {
 		"jest/globals": true,
 	},
 	overrides: [
-		require("@sikaeducation/eslint-config-ts-react/jest"),
+		require("@sikaeducation/eslint-config/jest"),
 		{
 			files: ["**/*.{test,spec}.{ts,tsx,js,jsx}"],
 			rules: {
