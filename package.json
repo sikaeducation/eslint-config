@@ -29,7 +29,7 @@
 		"confusing-browser-globals": "^1.0.11"
 	},
 	"peerDependencies": {
-		"@sikaeducation/eslint-config": "^2",
+		"@sikaeducation/eslint-config": "*",
 		"@typescript-eslint/eslint-plugin": "^6.2.0",
 		"@typescript-eslint/parser": "^6.2.0",
 		"eslint": "^8.47.0",
