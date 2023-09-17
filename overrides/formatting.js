@@ -162,8 +162,7 @@ module.exports = {
 		],
 		"max-statements": [
 			"warn",
-			// eslint-disable-next-line no-magic-numbers
-			10,
+			12,
 		],
 		"max-statements-per-line": [
 			"error",
