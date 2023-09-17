@@ -70,7 +70,10 @@ module.exports = {
 				"@typescript-eslint/no-unsafe-member-access": "error",
 				"@typescript-eslint/no-unsafe-return": "error",
 				"no-unused-vars": "off", // Use TS version
-				"@typescript-eslint/no-unused-vars": "error",
+				"@typescript-eslint/no-unused-vars": [
+					"error",
+					{ vars: "all", args: "after-used", ignoreRestSiblings: true, destructuredArrayIgnorePattern: "^_" },
+				],
 				"@typescript-eslint/prefer-as-const": "error",
 				"require-await": "off", // Use TS version
 				"@typescript-eslint/require-await": "error",
