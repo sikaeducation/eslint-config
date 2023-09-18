@@ -42,5 +42,8 @@
 		"eslint-plugin-react": "^7.28.0",
 		"eslint-plugin-react-hooks": "^4.3.0",
 		"eslint-plugin-storybook": "^0.6.8"
+	},
+	"devDependencies": {
+		"jest-extended": "^4.0.1"
 	}
 }
