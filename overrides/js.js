@@ -712,7 +712,7 @@ module.exports = {
 				"no-undef-init": "error",
 				"no-undefined": "error",
 				"no-unused-vars": [
-					"error",
+					"warn",
 					{ vars: "all", args: "after-used", ignoreRestSiblings: true, destructuredArrayIgnorePattern: "^_" },
 				],
 				"no-use-before-define": [
