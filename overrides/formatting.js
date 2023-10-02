@@ -214,8 +214,8 @@ module.exports = {
 		],
 		"object-curly-newline": ["error", { minProperties: 2 }],
 		"object-curly-spacing": ["error", "always", {
-			arraysInObjects: "never",
-			objectsInObjects: "never",
+			arraysInObjects: false,
+			objectsInObjects: false,
 		}],
 		"operator-linebreak": [
 			"error",
