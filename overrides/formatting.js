@@ -212,7 +212,11 @@ module.exports = {
 			"error",
 			"beside",
 		],
-		"object-curly-newline": ["error"],
+		"object-curly-newline": ["error", { minProperties: 2 }],
+		"object-curly-spacing": ["error", "always", {
+			arraysInObjects: "never",
+			objectsInObjects: "never",
+		}],
 		"operator-linebreak": [
 			"error",
 			"before",
