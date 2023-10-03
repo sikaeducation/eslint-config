@@ -4,7 +4,10 @@ module.exports = {
 	rules: {
 		"array-bracket-newline": [
 			"error",
-			"consistent",
+			{
+				multiline: true,
+				minItems: 2,
+			},
 		],
 		"array-bracket-spacing": ["error"],
 		"array-element-newline": [
