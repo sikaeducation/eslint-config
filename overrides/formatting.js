@@ -4,16 +4,10 @@ module.exports = {
 	rules: {
 		"array-bracket-newline": [
 			"error",
-			{
-				multiline: true,
-				minItems: 2,
-			},
+			"always",
 		],
 		"array-bracket-spacing": ["error"],
-		"array-element-newline": [
-			"error",
-			"consistent",
-		],
+		"array-element-newline": ["error"],
 		"arrow-parens": [
 			"error",
 			"always",
@@ -172,7 +166,7 @@ module.exports = {
 		],
 		"multiline-ternary": [
 			"error",
-			"always-multiline",
+			"always",
 		],
 		"new-parens": [
 			"error",
@@ -180,7 +174,7 @@ module.exports = {
 		],
 		"newline-per-chained-call": [
 			"error",
-			{ ignoreChainWithDepth: 2 },
+			{ ignoreChainWithDepth: 1 },
 		],
 		"no-extra-parens": [
 			"off",
@@ -211,7 +205,7 @@ module.exports = {
 			"error",
 			"beside",
 		],
-		"object-curly-newline": ["error", { consistent: true }],
+		"object-curly-newline": ["error", "always"],
 		"object-curly-spacing": ["error", "always", {
 			arraysInObjects: false,
 			objectsInObjects: false,
