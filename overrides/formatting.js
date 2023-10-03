@@ -208,7 +208,7 @@ module.exports = {
 			"error",
 			"beside",
 		],
-		"object-curly-newline": ["error", "consistent"],
+		"object-curly-newline": ["error", { consistent: true }],
 		"object-curly-spacing": ["error", "always", {
 			arraysInObjects: false,
 			objectsInObjects: false,
