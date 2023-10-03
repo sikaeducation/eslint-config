@@ -1,6 +1,6 @@
 {
 	"name": "@sikaeducation/eslint-config",
-	"version": "2.0.25",
+	"version": "2.0.26",
 	"description": "Linting and formatting for Sika's projects",
 	"main": "./src/index.js",
 	"exports": {
