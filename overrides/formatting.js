@@ -1,6 +1,10 @@
+const jsxIndent = require("eslint-plugin-react/lib/rules/jsx-indent");
+
 /* eslint-disable max-lines */
 module.exports = {
-	files: ["**/*"],
+	files: [
+		"**/*",
+	],
 	rules: {
 		"array-bracket-newline": [
 			"error",
@@ -9,8 +13,12 @@ module.exports = {
 				minItems: 1,
 			},
 		],
-		"array-bracket-spacing": ["error"],
-		"array-element-newline": ["error"],
+		"array-bracket-spacing": [
+			"error",
+		],
+		"array-element-newline": [
+			"error",
+		],
 		"arrow-parens": [
 			"error",
 			"always",
@@ -18,7 +26,8 @@ module.exports = {
 		"arrow-spacing": [
 			"error",
 			{
-				before: true, after: true,
+				before: true,
+				after: true,
 			},
 		],
 		"block-spacing": [
@@ -29,22 +38,32 @@ module.exports = {
 			"error",
 			"1tbs",
 		],
+		"space-before-blocks": [
+			"error",
+			{
+				functions: "never",
+				keywords: "always",
+				classes: "always",
+			},
+		],
 		"comma-style": [
 			"error",
 			"last",
-			{ exceptions: {
-				ArrayExpression: false,
-				ArrayPattern: false,
-				ArrowFunctionExpression: false,
-				CallExpression: false,
-				FunctionDeclaration: false,
-				FunctionExpression: false,
-				ImportDeclaration: false,
-				ObjectExpression: false,
-				ObjectPattern: false,
-				VariableDeclaration: false,
-				NewExpression: false,
-			}},
+			{
+				exceptions: {
+					ArrayExpression: false,
+					ArrayPattern: false,
+					ArrowFunctionExpression: false,
+					CallExpression: false,
+					FunctionDeclaration: false,
+					FunctionExpression: false,
+					ImportDeclaration: false,
+					ObjectExpression: false,
+					ObjectPattern: false,
+					VariableDeclaration: false,
+					NewExpression: false,
+				},
+			},
 		],
 		"comma-dangle": [
 			"error",
@@ -72,12 +91,17 @@ module.exports = {
 			"error",
 			"never",
 		],
-		"function-call-argument-newline": ["error"],
-		"function-paren-newline": ["error"],
+		"function-call-argument-newline": [
+			"error",
+		],
+		"function-paren-newline": [
+			"error",
+		],
 		"generator-star-spacing": [
 			"error",
 			{
-				before: false, after: true,
+				before: false,
+				after: true,
 			},
 		],
 		"implicit-arrow-linebreak": [
@@ -100,7 +124,9 @@ module.exports = {
 					parameters: 1,
 					body: 1,
 				},
-				CallExpression: { arguments: 1 },
+				CallExpression: {
+					arguments: 1,
+				},
 				ArrayExpression: 1,
 				ObjectExpression: 1,
 				ImportDeclaration: 1,
@@ -135,7 +161,8 @@ module.exports = {
 		"keyword-spacing": [
 			"error",
 			{
-				before: true, after: true,
+				before: true,
+				after: true,
 			},
 		],
 		"line-comment-position": "off",
@@ -165,7 +192,9 @@ module.exports = {
 		],
 		"max-statements-per-line": [
 			"error",
-			{ max: 1 },
+			{
+				max: 1,
+			},
 		],
 		"multiline-ternary": [
 			"error",
@@ -177,28 +206,37 @@ module.exports = {
 		],
 		"newline-per-chained-call": [
 			"error",
-			{ ignoreChainWithDepth: 1 },
+			{
+				ignoreChainWithDepth: 1,
+			},
 		],
 		"no-extra-parens": [
 			"off",
 			"all",
 			{
 				conditionalAssign: true,
-				nestedBinaryExpressions: false,
-				returnAssign: false,
+				returnAssign: true,
+				nestedBinaryExpressions: true,
+				ternaryOperandBinaryExpressions: true,
 				ignoreJSX: "all", // delegate to eslint-plugin-react
-				enforceForArrowConditionals: false,
+				enforceForArrowConditionals: true,
+				enforceForSequenceExpressions: true,
+				enforceForNewInMemberExpressions: true,
 			},
 		],
 		"no-mixed-spaces-and-tabs": "error",
 		"no-multi-spaces": [
 			"error",
-			{ ignoreEOLComments: false },
+			{
+				ignoreEOLComments: false,
+			},
 		],
 		"no-multiple-empty-lines": [
 			"error",
 			{
-				max: 2, maxBOF: 0, maxEOF: 0,
+				max: 2,
+				maxBOF: 0,
+				maxEOF: 0,
 			},
 		],
 		"no-tabs": "off",
@@ -208,11 +246,18 @@ module.exports = {
 			"error",
 			"beside",
 		],
-		"object-curly-newline": ["error", "always"],
-		"object-curly-spacing": ["error", "always", {
-			arraysInObjects: false,
-			objectsInObjects: false,
-		}],
+		"object-curly-newline": [
+			"error",
+			"always",
+		],
+		"object-curly-spacing": [
+			"error",
+			"always",
+			{
+				arraysInObjects: false,
+				objectsInObjects: false,
+			},
+		],
 		"object-property-newline": "error",
 		"operator-linebreak": [
 			"error",
@@ -225,7 +270,9 @@ module.exports = {
 		"quotes": [
 			"error",
 			"double",
-			{ allowTemplateLiterals: true },
+			{
+				allowTemplateLiterals: true,
+			},
 		],
 		"rest-spread-spacing": [
 			"error",
@@ -247,13 +294,15 @@ module.exports = {
 			{
 				words: true,
 				nonwords: false,
-				overrides: {},
+				overrides: {
+				},
 			},
 		],
 		"switch-colon-spacing": [
 			"error",
 			{
-				after: true, before: false,
+				after: true,
+				before: false,
 			},
 		],
 		"template-curly-spacing": "error",
@@ -261,7 +310,9 @@ module.exports = {
 		"wrap-iife": [
 			"error",
 			"outside",
-			{ functionPrototypeMethods: false },
+			{
+				functionPrototypeMethods: false,
+			},
 		],
 		"yield-star-spacing": [
 			"error",

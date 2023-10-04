@@ -1,6 +1,8 @@
 /* eslint-disable max-lines */
 module.exports = {
-	files: ["**/*.jsx"],
+	files: [
+		"**/*.jsx",
+	],
 	plugins: [
 		"react",
 		"react-hooks",
@@ -12,7 +14,10 @@ module.exports = {
 			pragma: "React",
 			linkComponents: [
 				"Hyperlink",
-				{ name: "Link", linkAttribute: "to" },
+				{
+					name: "Link",
+					linkAttribute: "to",
+				},
 			],
 		},
 		"import/resolver": {
@@ -25,25 +30,33 @@ module.exports = {
 			},
 		},
 		"import/parsers": {
-			espree: [
+			"espree": [
 				".js",
 				".cjs",
 				".mjs",
 				".jsx",
 			],
+			"@typescript-eslint/parser": [
+				".ts",
+				".tsx",
+			],
 		},
 	},
 	overrides: [
 		{
-			files: ["**/*.jsx"],
+			files: [
+				"**/*.jsx",
+				"**/*.tsx",
+			],
 			extends: [
-				"plugin:react/recommended",
-				"plugin:react-hooks/recommended",
 				"plugin:jsx-a11y/strict",
 			],
 		},
 		{
-			files: ["**/*.jsx"],
+			files: [
+				"**/*.jsx",
+				"**/*.tsx",
+			],
 			rules: {
 				"no-param-reassign": "off",
 				"react/button-has-type": "error",
@@ -52,7 +65,9 @@ module.exports = {
 				"react/function-component-definition": "error",
 				"react/hook-use-state": [
 					"error",
-					{ allowDestructuredState: true },
+					{
+						allowDestructuredState: true,
+					},
 				],
 				"react/iframe-missing-sandbox": "error",
 				"react/jsx-boolean-value": [
@@ -68,14 +83,16 @@ module.exports = {
 				"react/jsx-curly-newline": "error",
 				"react/jsx-curly-spacing": [
 					"error",
-					{ when: "never", children: true },
+					{
+						when: "never",
+						children: true,
+					},
 				],
 				"react/jsx-equals-spacing": "error",
 				"react/jsx-filename-extension": [
 					"error",
 					{
 						extensions: [
-							".tsx",
 							".jsx",
 						],
 					},
@@ -97,7 +114,9 @@ module.exports = {
 				"react/jsx-indent": [
 					"error",
 					"tab",
-					{ indentLogicalExpressions: true },
+					{
+						indentLogicalExpressions: true,
+					},
 				],
 				"react/jsx-indent-props": [
 					"error",
@@ -106,11 +125,15 @@ module.exports = {
 				"react/jsx-key": "error",
 				"react/jsx-max-depth": [
 					"warn",
-					{ max: 5 },
+					{
+						max: 5,
+					},
 				],
 				"react/jsx-max-props-per-line": [
 					"error",
-					{ when: "multiline" },
+					{
+						when: "multiline",
+					},
 				],
 				"react/jsx-newline": "error",
 				"react/jsx-no-bind": "error",

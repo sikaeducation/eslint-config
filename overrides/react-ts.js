@@ -1,5 +1,7 @@
 module.exports = {
-	files: ["**/*.tsx"],
+	files: [
+		"**/*.tsx",
+	],
 	settings: {
 		"import/resolver": {
 			typescript: {
@@ -26,7 +28,9 @@ module.exports = {
 	overrides: [
 		require("@sikaeducation/eslint-config/react"),
 		{
-			files: ["**/slices/*.{ts,tsx}"],
+			files: [
+				"**/slices/*.{ts,tsx}",
+			],
 			rules: {
 				"no-param-reassign": "off",
 			},
@@ -54,14 +58,20 @@ module.exports = {
 						],
 					},
 				],
-				"no-use-before-define": "error",
+				"no-use-before-define": "off",
 				"@typescript-eslint/no-use-before-define": "error",
 				"react/jsx-filename-extension": [
 					"warn",
-					{ extensions: [".tsx"] },
+					{
+						extensions: [
+							".tsx",
+						],
+					},
 				],
 				"no-shadow": "off",
-				"@typescript-eslint/no-shadow": ["error"],
+				"@typescript-eslint/no-shadow": [
+					"error",
+				],
 			},
 		},
 	],
