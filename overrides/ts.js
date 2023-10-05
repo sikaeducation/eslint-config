@@ -1,5 +1,7 @@
 module.exports = {
-	files: ["**/*.{ts,tsx}"],
+	files: [
+		"**/*.{ts,tsx}",
+	],
 	plugins: [
 		"@typescript-eslint",
 		"import",
@@ -36,7 +38,9 @@ module.exports = {
 	overrides: [
 		require("@sikaeducation/eslint-config/js"),
 		{
-			files: ["**/*.{ts,tsx}"],
+			files: [
+				"**/*.{ts,tsx}",
+			],
 			rules: {
 				"@typescript-eslint/no-var-requires": "off",
 				"@typescript-eslint/no-floating-promises": "off",
@@ -72,8 +76,16 @@ module.exports = {
 				"no-unused-vars": "off", // Use TS version
 				"@typescript-eslint/no-unused-vars": [
 					"warn",
-					{ vars: "all", args: "after-used", ignoreRestSiblings: true, destructuredArrayIgnorePattern: "^_" },
+					{
+						vars: "all",
+						args: "after-used",
+						ignoreRestSiblings: true,
+						destructuredArrayIgnorePattern: "^_",
+					},
 				],
+				// Formatting! Use TS version instead
+				"space-before-blocks": "off",
+				"@typescript-eslint/space-before-blocks": "error",
 				"@typescript-eslint/prefer-as-const": "error",
 				"require-await": "off", // Use TS version
 				"@typescript-eslint/require-await": "error",

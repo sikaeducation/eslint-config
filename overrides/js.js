@@ -3,12 +3,18 @@
 const confusingBrowserGlobals = require("confusing-browser-globals");
 
 module.exports = {
-	files: ["**/*.{js,jsx}"],
-	plugins: ["import"],
+	files: [
+		"**/*.{js,jsx}",
+	],
+	plugins: [
+		"import",
+	],
 	parser: "espree",
 	parserOptions: {
 		ecmaVersion: "latest",
-		ecmaFeatures: { jsx: true },
+		ecmaFeatures: {
+			jsx: true,
+		},
 	},
 	env: {
 		node: true,
@@ -16,29 +22,43 @@ module.exports = {
 		es6: true,
 	},
 	settings: {
-		"import/parsers": { espree: [
-			".js",
-			".cjs",
-			".mjs",
-			".jsx",
-		]},
-		"import/resolver": { node: { extensions: [
-			".js",
-			".jsx",
-		]}},
+		"import/parsers": {
+			espree: [
+				".js",
+				".cjs",
+				".mjs",
+				".jsx",
+			],
+		},
+		"import/resolver": {
+			node: {
+				extensions: [
+					".js",
+					".jsx",
+				],
+			},
+		},
 	},
 	overrides: [
 		{
-			files: ["**/*.{js,jsx}"],
-			extends: ["eslint:recommended"],
+			files: [
+				"**/*.{js,jsx}",
+			],
+			extends: [
+				"eslint:recommended",
+			],
 		},
 		{
-			files: ["**/*.{js,jsx}"],
+			files: [
+				"**/*.{js,jsx}",
+			],
 			rules: {
 				//
 				"array-callback-return": [
 					"error",
-					{ allowImplicit: true },
+					{
+						allowImplicit: true,
+					},
 				],
 				"complexity": [
 					"warn",
@@ -54,12 +74,16 @@ module.exports = {
 				"default-param-last": "error",
 				"dot-notation": [
 					"error",
-					{ allowKeywords: true },
+					{
+						allowKeywords: true,
+					},
 				],
 				"eqeqeq": [
 					"error",
 					"always",
-					{ null: "ignore" },
+					{
+						null: "ignore",
+					},
 				],
 				"grouped-accessor-pairs": "error",
 				"no-alert": "error",
@@ -69,15 +93,19 @@ module.exports = {
 				"no-div-regex": "off",
 				"no-else-return": [
 					"error",
-					{ allowElseIf: false },
+					{
+						allowElseIf: false,
+					},
 				],
 				"no-empty-function": [
 					"error",
-					{ allow: [
-						"arrowFunctions",
-						"functions",
-						"methods",
-					]},
+					{
+						allow: [
+							"arrowFunctions",
+							"functions",
+							"methods",
+						],
+					},
 				],
 				"no-eq-null": "error",
 				"no-eval": "error",
@@ -88,7 +116,9 @@ module.exports = {
 				"no-floating-decimal": "error",
 				"no-global-assign": [
 					"error",
-					{ exceptions: []},
+					{
+						exceptions: [],
+					},
 				],
 				"no-implicit-coercion": [
 					"off",
@@ -106,7 +136,8 @@ module.exports = {
 				"no-labels": [
 					"error",
 					{
-						allowLoop: false, allowSwitch: false,
+						allowLoop: false,
+						allowSwitch: false,
 					},
 				],
 				"no-lone-blocks": "error",
@@ -198,7 +229,9 @@ module.exports = {
 				"no-script-url": "error",
 				"no-self-assign": [
 					"error",
-					{ props: true },
+					{
+						props: true,
+					},
 				],
 				"no-self-compare": "error",
 				"no-sequences": "error",
@@ -226,24 +259,31 @@ module.exports = {
 							"todo",
 							"fixme",
 							"xxx",
-						], location: "start",
+						],
+						location: "start",
 					},
 				],
 				"no-with": "error",
 				"prefer-promise-reject-errors": [
 					"error",
-					{ allowEmptyReject: true },
+					{
+						allowEmptyReject: true,
+					},
 				],
 				"prefer-object-has-own": "error",
 				"prefer-regex-literals": [
 					"error",
-					{ disallowRedundantWrapping: true },
+					{
+						disallowRedundantWrapping: true,
+					},
 				],
 				"yoda": "error",
 				"for-direction": "error",
 				"getter-return": [
 					"error",
-					{ allowImplicit: true },
+					{
+						allowImplicit: true,
+					},
 				],
 				"no-async-promise-executor": "error",
 				"no-await-in-loop": "error",
@@ -281,14 +321,18 @@ module.exports = {
 				"no-unreachable": "error",
 				"no-unreachable-loop": [
 					"error",
-					{ ignore: []},
+					{
+						ignore: [],
+					},
 				],
 
 				"no-unsafe-finally": "error",
 				"no-unsafe-negation": "error",
 				"no-unsafe-optional-chaining": [
 					"error",
-					{ disallowArithmeticOperators: true },
+					{
+						disallowArithmeticOperators: true,
+					},
 				],
 				"no-unused-private-class-members": "error",
 				"no-useless-backreference": "error",
@@ -296,25 +340,35 @@ module.exports = {
 				"valid-jsdoc": "error",
 				"valid-typeof": [
 					"error",
-					{ requireStringLiterals: true },
+					{
+						requireStringLiterals: true,
+					},
 				],
 				"arrow-body-style": [
 					"error",
 					"as-needed",
-					{ requireReturnForObjectLiteral: false },
+					{
+						requireReturnForObjectLiteral: false,
+					},
 				],
 				"constructor-super": "error",
 				"no-class-assign": "error",
 				"no-confusing-arrow": [
 					"error",
-					{ allowParens: true },
+					{
+						allowParens: true,
+					},
 				],
 				"no-const-assign": "error",
 				"no-dupe-class-members": "error",
 				"no-new-symbol": "error",
 				"no-restricted-exports": [
 					"error",
-					{ restrictedNamedExports: ["then"]},
+					{
+						restrictedNamedExports: [
+							"then",
+						],
+					},
 				],
 				"no-this-before-super": "error",
 				"no-useless-computed-key": "error",
@@ -362,7 +416,9 @@ module.exports = {
 							object: false,
 						},
 					},
-					{ enforceForRenamedProperties: false },
+					{
+						enforceForRenamedProperties: false,
+					},
 				],
 				"prefer-numeric-literals": "error",
 				"prefer-reflect": "off",
@@ -393,7 +449,8 @@ module.exports = {
 				"import/no-unresolved": [
 					"error",
 					{
-						commonjs: true, caseSensitive: true,
+						commonjs: true,
+						caseSensitive: true,
 					},
 				],
 				"import/named": "error",
@@ -441,13 +498,15 @@ module.exports = {
 				],
 				"import/order": [
 					"error",
-					{ groups: [
-						[
-							"builtin",
-							"external",
-							"internal",
+					{
+						groups: [
+							[
+								"builtin",
+								"external",
+								"internal",
+							],
 						],
-					]},
+					},
 				],
 				"import/newline-after-import": "error",
 				"import/prefer-default-export": "error",
@@ -459,15 +518,21 @@ module.exports = {
 				"import/no-self-import": "error",
 				"import/no-cycle": [
 					"error",
-					{ maxDepth: "∞" },
+					{
+						maxDepth: "∞",
+					},
 				],
 				"import/no-useless-path-segments": [
 					"error",
-					{ commonjs: true },
+					{
+						commonjs: true,
+					},
 				],
 				"import/no-import-module-exports": [
 					"error",
-					{ exceptions: []},
+					{
+						exceptions: [],
+					},
 				],
 				"import/no-relative-packages": "error",
 				//
@@ -482,13 +547,15 @@ module.exports = {
 				"camelcase": [
 					"error",
 					{
-						properties: "never", ignoreDestructuring: false,
+						properties: "never",
+						ignoreDestructuring: false,
 					},
 				],
 				"comma-spacing": [
 					"error",
 					{
-						before: false, after: true,
+						before: false,
+						after: true,
 					},
 				],
 				"consistent-this": "off",
@@ -586,7 +653,9 @@ module.exports = {
 						allowSamePrecedence: false,
 					},
 				],
-				"no-multi-assign": ["error"],
+				"no-multi-assign": [
+					"error",
+				],
 				"no-new-object": "error",
 				"no-restricted-syntax": [
 					"error",
@@ -618,7 +687,9 @@ module.exports = {
 				],
 				"no-unneeded-ternary": [
 					"error",
-					{ defaultAssignment: false },
+					{
+						defaultAssignment: false,
+					},
 				],
 				"operator-assignment": [
 					"error",
@@ -630,7 +701,9 @@ module.exports = {
 					"error",
 					"consistent-as-needed",
 					{
-						keywords: false, unnecessary: false, numbers: false,
+						keywords: false,
+						unnecessary: false,
+						numbers: false,
 					},
 				],
 				"spaced-comment": [
@@ -696,13 +769,18 @@ module.exports = {
 				"no-unused-vars": [
 					"warn",
 					{
-						vars: "all", args: "after-used", ignoreRestSiblings: true, destructuredArrayIgnorePattern: "^_",
+						vars: "all",
+						args: "after-used",
+						ignoreRestSiblings: true,
+						destructuredArrayIgnorePattern: "^_",
 					},
 				],
 				"no-use-before-define": [
 					"error",
 					{
-						functions: false, classes: false, variables: true,
+						functions: false,
+						classes: false,
+						variables: true,
 					},
 				],
 			},

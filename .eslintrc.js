@@ -3,11 +3,15 @@ module.exports = {
 		require("@sikaeducation/eslint-config/js"),
 		require("@sikaeducation/eslint-config/formatting"),
 		{
-			files: ["**/*.js"],
+			files: [
+				"**/*.js",
+			],
 			rules: {
 				"import/no-unresolved": "off",
 			},
-			plugins: ["import"],
+			plugins: [
+				"import",
+			],
 		},
 	],
 };

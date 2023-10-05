@@ -1,5 +1,7 @@
 module.exports = {
-	files: ["**/*.{test,spec}.{ts,tsx,js,jsx}"],
+	files: [
+		"**/*.{test,spec}.{ts,tsx,js,jsx}",
+	],
 	plugins: [
 		"jest",
 		"jest-formatting",
@@ -11,12 +13,16 @@ module.exports = {
 	overrides: [
 		require("@sikaeducation/eslint-config/jest"),
 		{
-			files: ["**/*.{test,spec}.{ts,tsx,js,jsx}"],
+			files: [
+				"**/*.{test,spec}.{ts,tsx,js,jsx}",
+			],
 			rules: {
 				"import/no-extraneous-dependencies": [
 					"error",
 					{
-						devDependencies: ["**/*.{test,spec}.{ts,tsx,js,jsx}"],
+						devDependencies: [
+							"**/*.{test,spec}.{ts,tsx,js,jsx}",
+						],
 					},
 				],
 				"@typescript-eslint/unbound-method": "off",
@@ -24,12 +30,16 @@ module.exports = {
 			},
 		},
 		{
-			files: ["**/features/**/*.{ts,tsx}"],
+			files: [
+				"**/features/**/*.{ts,tsx}",
+			],
 			rules: {
 				"import/no-extraneous-dependencies": [
 					"error",
 					{
-						devDependencies: ["**/features/**/*.{ts,tsx}"],
+						devDependencies: [
+							"**/features/**/*.{ts,tsx}",
+						],
 					},
 				],
 			},

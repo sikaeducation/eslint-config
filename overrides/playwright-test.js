@@ -1,13 +1,23 @@
 module.exports = {
-	files: ["**/*.{test,spec,stories}.{js,jsx,ts,tsx}"],
-	plugins: ["playwright"],
+	files: [
+		"**/*.{test,spec,stories}.{js,jsx,ts,tsx}",
+	],
+	plugins: [
+		"playwright",
+	],
 	overrides: [
 		{
-			files: ["**/*.{test,spec,stories}.{js,jsx,ts,tsx}"],
-			extends: ["plugin:playwright/recommended"],
+			files: [
+				"**/*.{test,spec,stories}.{js,jsx,ts,tsx}",
+			],
+			extends: [
+				"plugin:playwright/recommended",
+			],
 		},
 		{
-			files: ["**/*.{test,spec,stories}.{js,jsx,ts,tsx}"],
+			files: [
+				"**/*.{test,spec,stories}.{js,jsx,ts,tsx}",
+			],
 			rules: {
 				"no-empty-pattern": "off",
 				"playwright/expect-expect": "warn",

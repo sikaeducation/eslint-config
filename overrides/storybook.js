@@ -1,13 +1,23 @@
 module.exports = {
-	files: ["*.stories.@(ts|tsx|js|jsx|mjs|cjs)"],
-	plugins: ["storybook"],
+	files: [
+		"*.stories.@(ts|tsx|js|jsx|mjs|cjs)",
+	],
+	plugins: [
+		"storybook",
+	],
 	overrides: [
 		{
-			files: ["*.stories.@(ts|tsx|js|jsx|mjs|cjs)"],
-			extends: ["plugin:storybook/recommended"],
+			files: [
+				"*.stories.@(ts|tsx|js|jsx|mjs|cjs)",
+			],
+			extends: [
+				"plugin:storybook/recommended",
+			],
 		},
 		{
-			files: ["*.stories.@(ts|tsx|js|jsx|mjs|cjs)"],
+			files: [
+				"*.stories.@(ts|tsx|js|jsx|mjs|cjs)",
+			],
 			rules: {
 				"react/jsx-filename-extension": [
 					"error",

@@ -1,13 +1,23 @@
 module.exports = {
-	files: ["**/features/**/*.{js,jsx,ts,tsx}"],
-	plugins: ["playwright"],
+	files: [
+		"**/features/**/*.{js,jsx,ts,tsx}",
+	],
+	plugins: [
+		"playwright",
+	],
 	overrides: [
 		{
-			files: ["**/features/**/*.{js,jsx,ts,tsx}"],
-			extends: ["plugin:playwright/jest-playwright"],
+			files: [
+				"**/features/**/*.{js,jsx,ts,tsx}",
+			],
+			extends: [
+				"plugin:playwright/jest-playwright",
+			],
 		},
 		{
-			files: ["**/features/**/*.{js,jsx,ts,tsx}"],
+			files: [
+				"**/features/**/*.{js,jsx,ts,tsx}",
+			],
 			rules: {
 				"jest/no-standalone-expect": [
 					"error",

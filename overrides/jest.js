@@ -17,7 +17,9 @@ module.exports = {
 				"**/features/**/*.{ts,tsx,js,jsx}",
 				"**/*.{test,spec,stories}.{ts,tsx,js,jsx}",
 			],
-			extends: ["plugin:jest/recommended"],
+			extends: [
+				"plugin:jest/recommended",
+			],
 		},
 		{
 			files: [
