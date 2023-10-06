@@ -1,10 +1,6 @@
-const jsxIndent = require("eslint-plugin-react/lib/rules/jsx-indent");
-
 /* eslint-disable max-lines */
 module.exports = {
-  files: [
-    "**/*",
-  ],
+  files: ["**/*"],
   rules: {
     "array-bracket-newline": [
       "error",
@@ -13,16 +9,9 @@ module.exports = {
         minItems: 1,
       },
     ],
-    "array-bracket-spacing": [
-      "error",
-    ],
-    "array-element-newline": [
-      "error",
-    ],
-    "arrow-parens": [
-      "error",
-      "always",
-    ],
+    "array-bracket-spacing": ["error"],
+    "array-element-newline": ["error"],
+    "arrow-parens": ["error", "always"],
     "arrow-spacing": [
       "error",
       {
@@ -30,14 +19,8 @@ module.exports = {
         after: true,
       },
     ],
-    "block-spacing": [
-      "error",
-      "always",
-    ],
-    "brace-style": [
-      "error",
-      "1tbs",
-    ],
+    "block-spacing": ["error", "always"],
+    "brace-style": ["error", "1tbs"],
     "space-before-blocks": [
       "off",
       {
@@ -75,28 +58,12 @@ module.exports = {
         functions: "always-multiline",
       },
     ],
-    "computed-property-spacing": [
-      "error",
-      "never",
-    ],
-    "dot-location": [
-      "error",
-      "property",
-    ],
-    "eol-last": [
-      "error",
-      "always",
-    ],
-    "func-call-spacing": [
-      "error",
-      "never",
-    ],
-    "function-call-argument-newline": [
-      "error",
-    ],
-    "function-paren-newline": [
-      "error",
-    ],
+    "computed-property-spacing": ["error", "never"],
+    "dot-location": ["error", "property"],
+    "eol-last": ["error", "always"],
+    "func-call-spacing": ["error", "never"],
+    "function-call-argument-newline": ["error"],
+    "function-paren-newline": ["error"],
     "generator-star-spacing": [
       "error",
       {
@@ -104,11 +71,8 @@ module.exports = {
         after: true,
       },
     ],
-    "implicit-arrow-linebreak": [
-      "error",
-      "beside",
-    ],
-    "indent": [
+    "implicit-arrow-linebreak": ["error", "beside"],
+    indent: [
       "error",
       "tab",
       {
@@ -153,10 +117,7 @@ module.exports = {
         ignoreComments: false,
       },
     ],
-    "jsx-quotes": [
-      "error",
-      "prefer-double",
-    ],
+    "jsx-quotes": ["error", "prefer-double"],
     "key-spacing": "error",
     "keyword-spacing": [
       "error",
@@ -166,15 +127,9 @@ module.exports = {
       },
     ],
     "line-comment-position": "off",
-    "linebreak-style": [
-      "error",
-      "unix",
-    ],
+    "linebreak-style": ["error", "unix"],
     "lines-around-code": "off",
-    "lines-between-class-members": [
-      "error",
-      "always",
-    ],
+    "lines-between-class-members": ["error", "always"],
     "max-len": [
       "warn",
       {
@@ -186,24 +141,15 @@ module.exports = {
         ignoreRegExpLiterals: true,
       },
     ],
-    "max-statements": [
-      "warn",
-      12,
-    ],
+    "max-statements": ["warn", 12],
     "max-statements-per-line": [
       "error",
       {
         max: 1,
       },
     ],
-    "multiline-ternary": [
-      "error",
-      "always",
-    ],
-    "new-parens": [
-      "error",
-      "always",
-    ],
+    "multiline-ternary": ["error", "always"],
+    "new-parens": ["error", "always"],
     "newline-per-chained-call": [
       "error",
       {
@@ -242,14 +188,8 @@ module.exports = {
     "no-tabs": "off",
     "no-trailing-spaces": "error",
     "no-whitespace-before-property": "error",
-    "nonblock-statement-body-position": [
-      "error",
-      "beside",
-    ],
-    "object-curly-newline": [
-      "error",
-      "always",
-    ],
+    "nonblock-statement-body-position": ["error", "beside"],
+    "object-curly-newline": ["error", "always"],
     "object-curly-spacing": [
       "error",
       "always",
@@ -259,43 +199,27 @@ module.exports = {
       },
     ],
     "object-property-newline": "error",
-    "operator-linebreak": [
-      "error",
-      "before",
-    ],
-    "padded-blocks": [
-      "error",
-      "never",
-    ],
-    "quotes": [
+    "operator-linebreak": ["error", "before"],
+    "padded-blocks": ["error", "never"],
+    quotes: [
       "error",
       "double",
       {
         allowTemplateLiterals: true,
       },
     ],
-    "rest-spread-spacing": [
-      "error",
-      "never",
-    ],
-    "semi": "error",
+    "rest-spread-spacing": ["error", "never"],
+    semi: "error",
     "semi-spacing": "error",
-    "space-before-function-paren": [
-      "error",
-      "never",
-    ],
-    "space-in-parens": [
-      "error",
-      "never",
-    ],
+    "space-before-function-paren": ["error", "never"],
+    "space-in-parens": ["error", "never"],
     "space-infix-ops": "error",
     "space-unary-ops": [
       "error",
       {
         words: true,
         nonwords: false,
-        overrides: {
-        },
+        overrides: {},
       },
     ],
     "switch-colon-spacing": [
@@ -314,9 +238,8 @@ module.exports = {
         functionPrototypeMethods: false,
       },
     ],
-    "yield-star-spacing": [
-      "error",
-      "after",
-    ],
+    "yield-star-spacing": ["error", "after"],
+    // "space-before-blocks": "off",
+    // "@typescript-eslint/space-before-blocks": "off",
   },
 };
