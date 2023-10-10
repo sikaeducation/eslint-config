@@ -42,10 +42,10 @@ module.exports = {
             allowImplicit: true,
           },
         ],
-        complexity: ["warn", 20],
+        "complexity": ["warn", 20],
         "class-methods-use-this": "error",
         "consistent-return": "error",
-        curly: ["error", "multi"],
+        "curly": ["error", "multi"],
         "default-case-last": "error",
         "default-param-last": "error",
         "dot-notation": [
@@ -54,7 +54,7 @@ module.exports = {
             allowKeywords: true,
           },
         ],
-        eqeqeq: [
+        "eqeqeq": [
           "error",
           "always",
           {
@@ -242,7 +242,7 @@ module.exports = {
             disallowRedundantWrapping: true,
           },
         ],
-        yoda: "error",
+        "yoda": "error",
         "for-direction": "error",
         "getter-return": [
           "error",
@@ -490,7 +490,7 @@ module.exports = {
         "no-path-concat": "error",
         "no-sync": "error",
         //
-        camelcase: [
+        "camelcase": [
           "error",
           {
             properties: "never",
