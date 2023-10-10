@@ -61,7 +61,7 @@ module.exports = {
         "@typescript-eslint/no-unsafe-member-access": "error",
         "@typescript-eslint/no-unsafe-return": "error",
         "no-unused-vars": "off", // Use TS version
-        "@typescript-eslint/off": [
+        "@typescript-eslint/no-unused-vars": [
           // Use TS compiler instead
           "warn",
           {
