@@ -18,12 +18,12 @@ npm i -D eslint @sikaeducation/eslint-config
 module.exports = {
   extends: [
     "@sikaeducation/eslint-config",
-    "@sikaeducation/eslint-config/configs/formatting",
+    "@sikaeducation/eslint-config/configs/jest",
   ],
 };
 ```
 
-- If you use the formatting configuration, it should always be last.
+- If you use the formatting configuration, it should always be last (but use Prettier instead)
 - Integrate this with your editor's ESLint plugin for fix-on-save. Neovim's is part of `nvim-lsp-config`.
 
 ## Available Configs
@@ -39,7 +39,7 @@ module.exports = {
 - `"@sikaeducation/eslint-config/configs/playwright-jest"`
 - `"@sikaeducation/eslint-config/configs/formatting"`
 
-Default is everything except formatting.
+Default is JS+TS+React+React TS.
 
 ## Development
 
