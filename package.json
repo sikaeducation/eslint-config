@@ -1,20 +1,8 @@
 {
   "name": "@sikaeducation/eslint-config",
   "version": "3.0.0",
+  "main": "./index.js",
   "description": "Linting and formatting for Sika's projects",
-  "main": "./src/index.js",
-  "exports": {
-    "./formatting": "./configs/formatting.js",
-    "./js": "./configs/js.js",
-    "./ts": "./configs/ts.js",
-    "./jest": "./configs/jest.js",
-    "./jest-ts": "./configs/jest-ts.js",
-    "./playwright-jest": "./configs/playwright-jest.js",
-    "./playwright-test": "./configs/playwright-test.js",
-    "./react": "./configs/react.js",
-    "./react-ts": "./configs/react-ts.js",
-    "./storybook": "./configs/storybook.js"
-  },
   "keywords": [
     "eslint",
     "eslint-config"
@@ -35,6 +23,7 @@
     "eslint-plugin-jest-extended": "^2.0.0",
     "eslint-plugin-jest-formatting": "^3.1.0",
     "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-playwright": "^0.16.0",
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
     "eslint-plugin-storybook": "^0.6.8"
@@ -43,7 +32,7 @@
     "eslint": "^8.47.0"
   },
   "devDependencies": {
-    "@sikaeducation/eslint-config": "*",
+    "@sikaeducation/eslint-config": "^3.0.0",
     "prettier": "^3.0.3"
   }
 }

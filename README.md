@@ -16,10 +16,9 @@ npm i -D eslint @sikaeducation/eslint-config
 ```js
 // .eslintrc.js
 module.exports = {
-  plugins: ["@sikaeducation/eslint-config"],
   extends: [
-    "plugin:@sikaeducation/eslint-config",
-    "plugin:@sikaeducation/eslint-config/configs/formatting",
+    "@sikaeducation/eslint-config",
+    "@sikaeducation/eslint-config/configs/formatting",
   ],
 };
 ```

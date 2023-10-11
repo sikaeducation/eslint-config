@@ -1,6 +1,5 @@
 module.exports = {
-	plugins: ["@sikaeducation/eslint-config"],
-	extends: ["plugin:@sikaeducation/eslint-config"],
+	extends: ["@sikaeducation/eslint-config"],
 	overrides: [
 		{
 			files: ["**/*.js"],
