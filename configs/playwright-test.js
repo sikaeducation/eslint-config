@@ -1,11 +1,7 @@
 module.exports = {
-  files: ["**/*.{test,spec,stories}.{js,jsx,ts,tsx}"],
   plugins: ["playwright"],
+  extends: ["plugin:playwright/recommended"],
   overrides: [
-    {
-      files: ["**/*.{test,spec,stories}.{js,jsx,ts,tsx}"],
-      extends: ["plugin:playwright/recommended"],
-    },
     {
       files: ["**/*.{test,spec,stories}.{js,jsx,ts,tsx}"],
       rules: {

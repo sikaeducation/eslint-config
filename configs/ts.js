@@ -1,33 +1,35 @@
 module.exports = {
-  files: ["**/*.{ts,tsx}"],
   plugins: ["@typescript-eslint", "import"],
-  parser: "@typescript-eslint/parser",
-  parserOptions: {
-    ecmaVersion: "latest",
-    project: "./tsconfig.json",
-    ecmaFeatures: {
-      jsx: true,
-    },
-  },
-  env: {
-    node: true,
-    browser: true,
-    es6: true,
-  },
-  settings: {
-    "import/parsers": {
-      "@typescript-eslint/parser": [".ts", ".tsx"],
-    },
-    "import/resolver": {
-      typescript: {
-        extensions: [".ts", ".tsx"],
-      },
-    },
-  },
+  extends: ["./js"],
   overrides: [
-    require("@sikaeducation/eslint-config/js"),
     {
       files: ["**/*.{ts,tsx}"],
+      parser: "@typescript-eslint/parser",
+      parserOptions: {
+        ecmaVersion: "latest",
+        project: "./tsconfig.json",
+        ecmaFeatures: {
+          jsx: true,
+        },
+      },
+      env: {
+        node: true,
+        browser: true,
+        es6: true,
+      },
+      settings: {
+        "import/resolver": {
+          typescript: {
+            extensions: [".ts", ".tsx"],
+          },
+          node: {
+            extensions: [".js", ".jsx", ".json"],
+          },
+        },
+        "import/parsers": {
+          "@typescript-eslint/parser": [".ts", ".tsx"],
+        },
+      },
       rules: {
         "@typescript-eslint/no-var-requires": "off",
         "@typescript-eslint/no-floating-promises": "off",

@@ -1,20 +1,6 @@
 module.exports = {
-  files: ["**/*.tsx"],
-  settings: {
-    "import/resolver": {
-      typescript: {
-        extensions: [".ts", ".tsx"],
-      },
-      node: {
-        extensions: [".js", ".jsx", ".json"],
-      },
-    },
-    "import/parsers": {
-      "@typescript-eslint/parser": [".ts", ".tsx"],
-    },
-  },
+  extends: ["./ts", "./react"],
   overrides: [
-    require("@sikaeducation/eslint-config/react"),
     {
       files: ["**/slices/*.{ts,tsx}"],
       rules: {

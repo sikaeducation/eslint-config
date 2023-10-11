@@ -1,25 +1,15 @@
 module.exports = {
-  files: [
-    "**/features/**/*.{js,jsx,ts,tsx}",
-    "**/*.{test,spec,stories}.{js,jsx,ts,tsx}",
-  ],
   plugins: ["jest", "jest-formatting", "jest-extended"],
-  env: {
-    "jest/globals": true,
-  },
+  extends: ["plugin:jest/recommended"],
   overrides: [
     {
       files: [
-        "**/features/**/*.{ts,tsx,js,jsx}",
-        "**/*.{test,spec,stories}.{ts,tsx,js,jsx}",
+        "**/features/**/*.{js,jsx,ts,tsx}",
+        "**/*.{test,spec,stories}.{js,jsx,ts,tsx}",
       ],
-      extends: ["plugin:jest/recommended"],
-    },
-    {
-      files: [
-        "**/features/**/*.{ts,tsx,js,jsx}",
-        "**/*.{test,spec,stories}.{ts,tsx,js,jsx}",
-      ],
+      env: {
+        "jest/globals": true,
+      },
       rules: {
         "import/no-extraneous-dependencies": [
           "error",

@@ -1,11 +1,7 @@
 module.exports = {
-  files: ["*.stories.@(ts|tsx|js|jsx|mjs|cjs)"],
   plugins: ["storybook"],
+  extends: ["plugin:storybook/recommended"],
   overrides: [
-    {
-      files: ["*.stories.@(ts|tsx|js|jsx|mjs|cjs)"],
-      extends: ["plugin:storybook/recommended"],
-    },
     {
       files: ["*.stories.@(ts|tsx|js|jsx|mjs|cjs)"],
       rules: {

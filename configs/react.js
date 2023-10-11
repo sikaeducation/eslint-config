@@ -1,36 +1,32 @@
 /* eslint-disable max-lines */
 module.exports = {
-  files: ["**/*.jsx"],
   plugins: ["react", "react-hooks", "jsx-a11y"],
-  settings: {
-    react: {
-      version: "detect",
-      pragma: "React",
-      linkComponents: [
-        "Hyperlink",
-        {
-          name: "Link",
-          linkAttribute: "to",
-        },
-      ],
-    },
-    "import/resolver": {
-      node: {
-        extensions: [".js", ".jsx", ".json"],
-      },
-    },
-    "import/parsers": {
-      espree: [".js", ".cjs", ".mjs", ".jsx"],
-      "@typescript-eslint/parser": [".ts", ".tsx"],
-    },
-  },
+  extends: ["plugin:jsx-a11y/strict"],
   overrides: [
     {
-      files: ["**/*.jsx", "**/*.tsx"],
-      extends: ["plugin:jsx-a11y/strict"],
-    },
-    {
-      files: ["**/*.jsx", "**/*.tsx"],
+      files: ["**/*.jsx"],
+      settings: {
+        react: {
+          version: "detect",
+          pragma: "React",
+          linkComponents: [
+            "Hyperlink",
+            {
+              name: "Link",
+              linkAttribute: "to",
+            },
+          ],
+        },
+        "import/resolver": {
+          node: {
+            extensions: [".js", ".jsx", ".json"],
+          },
+        },
+        "import/parsers": {
+          espree: [".js", ".cjs", ".mjs", ".jsx"],
+          "@typescript-eslint/parser": [".ts", ".tsx"],
+        },
+      },
       rules: {
         "no-param-reassign": "off",
         "react/button-has-type": "error",

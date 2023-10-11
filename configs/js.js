@@ -3,49 +3,44 @@
 const confusingBrowserGlobals = require("confusing-browser-globals");
 
 module.exports = {
-  files: ["**/*.{js,jsx}"],
-  plugins: ["import"],
-  parser: "espree",
-  parserOptions: {
-    ecmaVersion: "latest",
-    ecmaFeatures: {
-      jsx: true,
-    },
-  },
-  env: {
-    node: true,
-    browser: true,
-    es6: true,
-  },
-  settings: {
-    "import/parsers": {
-      espree: [".js", ".cjs", ".mjs", ".jsx"],
-    },
-    "import/resolver": {
-      node: {
-        extensions: [".js", ".jsx"],
-      },
-    },
-  },
+  extends: ["eslint:recommended"],
   overrides: [
     {
       files: ["**/*.{js,jsx}"],
-      extends: ["eslint:recommended"],
-    },
-    {
-      files: ["**/*.{js,jsx}"],
+      plugins: ["import"],
+      parser: "espree",
+      parserOptions: {
+        ecmaVersion: "latest",
+        ecmaFeatures: {
+          jsx: true,
+        },
+      },
+      env: {
+        node: true,
+        browser: true,
+        es6: true,
+      },
+      settings: {
+        "import/parsers": {
+          espree: [".js", ".cjs", ".mjs", ".jsx"],
+        },
+        "import/resolver": {
+          node: {
+            extensions: [".js", ".jsx"],
+          },
+        },
+      },
       rules: {
-        //
         "array-callback-return": [
           "error",
           {
             allowImplicit: true,
           },
         ],
-        "complexity": ["warn", 20],
+        complexity: ["warn", 20],
         "class-methods-use-this": "error",
         "consistent-return": "error",
-        "curly": ["error", "multi"],
+        curly: ["error", "multi"],
         "default-case-last": "error",
         "default-param-last": "error",
         "dot-notation": [
@@ -54,7 +49,7 @@ module.exports = {
             allowKeywords: true,
           },
         ],
-        "eqeqeq": [
+        eqeqeq: [
           "error",
           "always",
           {
@@ -242,7 +237,7 @@ module.exports = {
             disallowRedundantWrapping: true,
           },
         ],
-        "yoda": "error",
+        yoda: "error",
         "for-direction": "error",
         "getter-return": [
           "error",
@@ -490,7 +485,7 @@ module.exports = {
         "no-path-concat": "error",
         "no-sync": "error",
         //
-        "camelcase": [
+        camelcase: [
           "error",
           {
             properties: "never",
@@ -608,7 +603,7 @@ module.exports = {
         "prefer-exponentiation-operator": "error",
         "prefer-object-spread": "error",
         "quote-props": [
-          "error",
+          "off", // Handled by prettier
           "consistent-as-needed",
           {
             keywords: false,
@@ -633,7 +628,6 @@ module.exports = {
         ],
         "unicode-bom": ["error", "never"],
         "wrap-regex": "off",
-        //
         "no-delete-var": "error",
         "no-label-var": "error",
         "no-restricted-globals": [

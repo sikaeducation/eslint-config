@@ -1,13 +1,11 @@
 module.exports = {
-  files: ["**/*.{test,spec}.{ts,tsx,js,jsx}"],
-  plugins: ["jest", "jest-formatting", "jest-extended"],
-  env: {
-    "jest/globals": true,
-  },
+  extends: ["./ts", "./jest"],
   overrides: [
-    require("@sikaeducation/eslint-config/jest"),
     {
       files: ["**/*.{test,spec}.{ts,tsx,js,jsx}"],
+      env: {
+        "jest/globals": true,
+      },
       rules: {
         "import/no-extraneous-dependencies": [
           "error",
