@@ -1,12 +1,13 @@
 module.exports = {
-  overrides: [
-    require("@sikaeducation/eslint-config/js"),
-    {
-      files: ["**/*.js"],
-      rules: {
-        "import/no-unresolved": "off",
-      },
-      plugins: ["import"],
-    },
-  ],
+	plugins: ["@sikaeducation/eslint-config"],
+	extends: ["plugin:@sikaeducation/eslint-config"],
+	overrides: [
+		{
+			files: ["**/*.js"],
+			rules: {
+				"import/no-unresolved": "off",
+			},
+			plugins: ["import"],
+		},
+	],
 };
