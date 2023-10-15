@@ -18,7 +18,7 @@ npm i -D eslint @sikaeducation/eslint-config
 module.exports = {
   extends: [
     "@sikaeducation/eslint-config",
-    "@sikaeducation/eslint-config/configs/jest",
+    "@sikaeducation/eslint-config/src/configs/jest",
   ],
 };
 ```
@@ -28,16 +28,16 @@ module.exports = {
 
 ## Available Configs
 
-- `"@sikaeducation/eslint-config/configs/js"`
-- `"@sikaeducation/eslint-config/configs/ts"`
-- `"@sikaeducation/eslint-config/configs/react"`
-- `"@sikaeducation/eslint-config/configs/react-ts"`
-- `"@sikaeducation/eslint-config/configs/jest"`
-- `"@sikaeducation/eslint-config/configs/jest-ts"`
-- `"@sikaeducation/eslint-config/configs/storybook"`
-- `"@sikaeducation/eslint-config/configs/playwright-test"`
-- `"@sikaeducation/eslint-config/configs/playwright-jest"`
-- `"@sikaeducation/eslint-config/configs/formatting"`
+- `"@sikaeducation/eslint-config/src/configs/js"`
+- `"@sikaeducation/eslint-config/src/configs/ts"`
+- `"@sikaeducation/eslint-config/src/configs/react"`
+- `"@sikaeducation/eslint-config/src/configs/react-ts"`
+- `"@sikaeducation/eslint-config/src/configs/jest"`
+- `"@sikaeducation/eslint-config/src/configs/jest-ts"`
+- `"@sikaeducation/eslint-config/src/configs/storybook"`
+- `"@sikaeducation/eslint-config/src/configs/playwright-test"`
+- `"@sikaeducation/eslint-config/src/configs/playwright-jest"`
+- `"@sikaeducation/eslint-config/src/configs/formatting"`
 
 Default is JS+TS+React+React TS.
 

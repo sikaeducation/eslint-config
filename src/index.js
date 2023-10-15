@@ -1,3 +1,3 @@
 module.exports = {
-	extends: ["./configs/react-ts"],
+  extends: ["./configs/react-ts"],
 };
