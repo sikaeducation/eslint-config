@@ -37,6 +37,7 @@ module.exports = {
 - `"@sikaeducation/eslint-config/src/configs/storybook"`
 - `"@sikaeducation/eslint-config/src/configs/playwright-test"`
 - `"@sikaeducation/eslint-config/src/configs/playwright-jest"`
+- `"@sikaeducation/eslint-config/src/configs/vitest"`
 - `"@sikaeducation/eslint-config/src/configs/formatting"`
 
 Default is JS+TS+React+React TS.
