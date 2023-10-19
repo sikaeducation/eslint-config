@@ -3,7 +3,7 @@ module.exports = {
   extends: ["./js"],
   overrides: [
     {
-      files: ["**/*.{ts,tsx}"],
+      files: ["**/*.{ts,tsx,mts,cts}"],
       parser: "@typescript-eslint/parser",
       parserOptions: {
         ecmaVersion: "latest",
@@ -20,14 +20,14 @@ module.exports = {
       settings: {
         "import/resolver": {
           typescript: {
-            extensions: [".ts", ".tsx"],
+            extensions: [".ts", ".tsx", ".mts", ".cts"],
           },
           node: {
-            extensions: [".js", ".jsx", ".json"],
+            extensions: [".js", ".jsx", ".json", ".mjs", ".cjs"],
           },
         },
         "import/parsers": {
-          "@typescript-eslint/parser": [".ts", ".tsx"],
+          "@typescript-eslint/parser": [".ts", ".tsx", ".mts", ".cts"],
         },
       },
       rules: {
