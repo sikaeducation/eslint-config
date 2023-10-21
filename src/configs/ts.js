@@ -75,7 +75,7 @@ module.exports = {
         ],
         "@typescript-eslint/prefer-as-const": "error",
         "require-await": "off", // Use TS version
-        "@typescript-eslint/require-await": "error",
+        "@typescript-eslint/require-await": "warn",
         "@typescript-eslint/restrict-plus-operands": "error",
         "@typescript-eslint/restrict-template-expressions": "error",
         "@typescript-eslint/triple-slash-reference": "error",
