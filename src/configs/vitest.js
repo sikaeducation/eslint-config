@@ -14,7 +14,7 @@ module.exports = {
         "vitest/no-conditional-in-test": "error",
         "vitest/no-conditional-tests": "error",
         "vitest/no-disabled-tests": "warn",
-        "vitest/no-done-callback": "error",
+        "vitest/no-done-callback": "warn",
         "vitest/no-duplicate-hooks": "error",
         "vitest/no-focused-tests": "warn",
         "vitest/no-hooks": "off",
