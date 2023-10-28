@@ -1,39 +1,50 @@
 {
-	"name": "@sikaeducation/eslint-config",
-	"version": "3.1.10",
-	"main": "./src/index.js",
-	"description": "Linting and formatting for Sika's projects",
-	"keywords": [
-		"eslint",
-		"eslint-config"
-	],
-	"scripts": {
-		"lint": "eslint --report-unused-disable-directives --ignore-path .gitignore --fix . && prettier . --write"
-	},
-	"author": "Kyle Coberly",
-	"license": "MIT",
-	"dependencies": {
-		"@types/confusing-browser-globals": "^1.0.0",
-		"@typescript-eslint/eslint-plugin": "^6.2.0",
-		"@typescript-eslint/parser": "^6.2.0",
-		"confusing-browser-globals": "^1.0.11",
-		"eslint-import-resolver-typescript": "^3.6.1",
-		"eslint-plugin-import": "^2.28.1",
-		"eslint-plugin-jest": "^27.2.3",
-		"eslint-plugin-jest-extended": "^2.0.0",
-		"eslint-plugin-jest-formatting": "^3.1.0",
-		"eslint-plugin-jsx-a11y": "^6.6.1",
-		"eslint-plugin-playwright": "^0.16.0",
-		"eslint-plugin-react": "^7.28.0",
-		"eslint-plugin-react-hooks": "^4.3.0",
-		"eslint-plugin-storybook": "^0.6.8",
-		"eslint-plugin-vitest": "^0.3.8"
-	},
-	"peerDependencies": {
-		"eslint": "^8.47.0"
-	},
-	"devDependencies": {
-		"@sikaeducation/eslint-config": "^3.1.1",
-		"prettier": "^3.0.3"
-	}
+  "name": "@sikaeducation/eslint-config",
+  "version": "3.1.10",
+  "description": "Linting and formatting for Sika's projects",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sikaeducation/eslint-config.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslint-config"
+  ],
+  "author": "Kyle Coberly",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sikaeducation/eslint-config/issues"
+  },
+  "engines": {
+    "node": ">= 20.8.1"
+  },
+  "homepage": "https://github.com/sikaeducation/eslint-config",
+  "main": "./src/index.js",
+  "scripts": {
+    "lint": "eslint --report-unused-disable-directives --ignore-path .gitignore --fix . && prettier . --write"
+  },
+  "dependencies": {
+    "@types/confusing-browser-globals": "^1.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.2.0",
+    "@typescript-eslint/parser": "^6.2.0",
+    "confusing-browser-globals": "^1.0.11",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-jest": "^27.2.3",
+    "eslint-plugin-jest-extended": "^2.0.0",
+    "eslint-plugin-jest-formatting": "^3.1.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-playwright": "^0.16.0",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-storybook": "^0.6.8",
+    "eslint-plugin-vitest": "^0.3.8"
+  },
+  "peerDependencies": {
+    "eslint": "^8.47.0"
+  },
+  "devDependencies": {
+    "@sikaeducation/eslint-config": "^3.1.1",
+    "prettier": "^3.0.3"
+  }
 }
