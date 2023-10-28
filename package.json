@@ -8,7 +8,6 @@
 		"eslint-config"
 	],
 	"scripts": {
-		"update:sika": "npm i @sikaeducation/eslint-config@latest",
 		"lint": "eslint --report-unused-disable-directives --ignore-path .gitignore --fix . && prettier . --write"
 	},
 	"author": "Kyle Coberly",

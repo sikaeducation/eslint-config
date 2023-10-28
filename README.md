@@ -6,8 +6,6 @@ Install with `npm install -D eslint @sikaeducation/eslint-config`.
 
 ## Usage
 
-See [Available Configs](#available-configs) for examples.
-
 ```bash
 # Install dependencies for TS and React
 npm i -D eslint @sikaeducation/eslint-config
@@ -17,14 +15,13 @@ npm i -D eslint @sikaeducation/eslint-config
 // .eslintrc.js
 module.exports = {
   extends: [
-    "@sikaeducation/eslint-config",
-    "@sikaeducation/eslint-config/src/configs/jest",
+    "@sikaeducation",
+    "@sikaeducation/eslint-config/src/configs/vitest",
   ],
 };
 ```
 
-- If you use the formatting configuration, it should always be last (but use Prettier instead)
-- Integrate this with your editor's ESLint plugin for fix-on-save. Neovim's is part of `nvim-lsp-config`.
+- Integrate this with your editor's ESLint plugin for fix-on-save. Neovim's is part of `nvim-lsp-config`. If the app is `type: "module"`, use `.eslintrc.cjs`.
 
 ## Available Configs
 
@@ -38,10 +35,11 @@ module.exports = {
 - `"@sikaeducation/eslint-config/src/configs/playwright-test"`
 - `"@sikaeducation/eslint-config/src/configs/playwright-jest"`
 - `"@sikaeducation/eslint-config/src/configs/vitest"`
-- `"@sikaeducation/eslint-config/src/configs/formatting"`
 
 Default is JS+TS+React+React TS.
 
-## Development
+## Deployment
 
-Publish updates by incrementing version (eg. `npm version patch`) and pushing.
+Set `NPM_TOKEN` on GitHub Actions to publish. Generate it on [Sika's npm page](https://www.npmjs.com/settings/sikaeducation/tokens) then add it to the [secrets page](https://github.com/sikaeducation/eslint-config/settings/secrets/actions).
+
+Publish updates by incrementing version with `npm version patch|minor|major`) and pushing.
