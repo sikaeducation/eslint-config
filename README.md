@@ -21,7 +21,7 @@ module.exports = {
 };
 ```
 
-- Integrate this with your editor's ESLint plugin for fix-on-save. Neovim's is part of `nvim-lsp-config`. If the app is `type: "module"`, use `.eslintrc.cjs`.
+- Integrate this with your editor's ESLint plugin for fix-on-save. Neovim's is part of `nvim-lsp-config`. If the app is `{"type": "module"}`, use `.eslintrc.cjs`.
 
 ## Available Configs
 
@@ -42,4 +42,4 @@ Default is JS+TS+React+React TS.
 
 Set `NPM_TOKEN` on GitHub Actions to publish. Generate it on [Sika's npm page](https://www.npmjs.com/settings/sikaeducation/tokens) then add it to the [secrets page](https://github.com/sikaeducation/eslint-config/settings/secrets/actions).
 
-Publish updates by incrementing version with `npm version patch|minor|major`) and pushing.
+Publish updates by incrementing the version with `npm version patch|minor|major` and pushing.
